@@ -1,0 +1,223 @@
+[
+  {
+    "url": "https://archive.org/metadata/19971998-daftpunk.com-daft-questions",
+    "status": 200,
+    "metadata": {
+      "created": 1793401259,
+      "d1": "ia600702.us.archive.org",
+      "d2": "ia800702.us.archive.org",
+      "dir": "/16/items/19971998-daftpunk.com-daft-questions",
+      "files": [
+        {
+          "name": "19971998-daftpunk.com-daft-questions.thumbs/Screen Recording 2026-05-29 at 3.10.17 PM 2_000001.jpg",
+          "source": "derivative",
+          "format": "Thumbnail",
+          "original": "Screen Recording 2026-05-29 at 3.10.17 PM 2.mov",
+          "mtime": "1780093879",
+          "size": "74452",
+          "md5": "47880265688bd5a117e81591f48c0d94",
+          "crc32": "ac47c656",
+          "sha1": "4ebe4637769591011e3a2150804aad0f18f1b285"
+        },
+        {
+          "name": "19971998-daftpunk.com-daft-questions.thumbs/Screen Recording 2026-05-29 at 3.10.17 PM 2_000005.jpg",
+          "source": "derivative",
+          "format": "Thumbnail",
+          "original": "Screen Recording 2026-05-29 at 3.10.17 PM 2.mov",
+          "mtime": "1780093880",
+          "size": "116248",
+          "md5": "368ae13b16b4ef315164cf58583e0107",
+          "crc32": "7a488ea5",
+          "sha1": "6c0817bc50a0f6e1620ee21cab383d4e2e74ea28"
+        },
+        {
+          "name": "19971998-daftpunk.com-daft-questions.thumbs/Screen Recording 2026-05-29 at 3.10.17 PM 2_000010.jpg",
+          "source": "derivative",
+          "format": "Thumbnail",
+          "original": "Screen Recording 2026-05-29 at 3.10.17 PM 2.mov",
+          "mtime": "1780093881",
+          "size": "136342",
+          "md5": "6c66f232b331b63a5bcab509985f8844",
+          "crc32": "98b8ff20",
+          "sha1": "b892bfafdd5e691a5b630260b490b8a52216587e"
+        },
+        {
+          "name": "19971998-daftpunk.com-daft-questions.thumbs/Screen Recording 2026-05-29 at 3.10.17 PM 2_000015.jpg",
+          "source": "derivative",
+          "format": "Thumbnail",
+          "original": "Screen Recording 2026-05-29 at 3.10.17 PM 2.mov",
+          "mtime": "1780093882",
+          "size": "68606",
+          "md5": "6e39b4116122c9826da60c70198fead0",
+          "crc32": "208aba76",
+          "sha1": "eb57fa20cb61cc9bca2d1c443ccc22293bf62c61"
+        },
+        {
+          "name": "19971998-daftpunk.com-daft-questions.thumbs/Screen Recording 2026-05-29 at 3.10.17 PM 2_000020.jpg",
+          "source": "derivative",
+          "format": "Thumbnail",
+          "original": "Screen Recording 2026-05-29 at 3.10.17 PM 2.mov",
+          "mtime": "1780093883",
+          "size": "50843",
+          "md5": "15ef74105560e89b8e8c52f785791e4e",
+          "crc32": "68626b81",
+          "sha1": "c4dba3f308354dbb2792d8016b129116c218716e"
+        },
+        {
+          "name": "19971998-daftpunk.com-daft-questions.thumbs/Screen Recording 2026-05-29 at 3.10.17 PM 2_000025.jpg",
+          "source": "derivative",
+          "format": "Thumbnail",
+          "original": "Screen Recording 2026-05-29 at 3.10.17 PM 2.mov",
+          "mtime": "1780093885",
+          "size": "37614",
+          "md5": "0819648e105c2d7fad7e535c931032f3",
+          "crc32": "d77c9441",
+          "sha1": "60cf05b934c378d428146a6c58ae37d8f6e3c6bd"
+        },
+        {
+          "name": "19971998-daftpunk.com-daft-questions.thumbs/Screen Recording 2026-05-29 at 3.10.17 PM 2_000030.jpg",
+          "source": "derivative",
+          "format": "Thumbnail",
+          "original": "Screen Recording 2026-05-29 at 3.10.17 PM 2.mov",
+          "mtime": "1780093886",
+          "size": "37737",
+          "md5": "253969dfe9be841824e7d6f24f205cb7",
+          "crc32": "26e73dbb",
+          "sha1": "c5b43ea4021e143cc9694cdf219b92a6f27dfd62"
+        },
+        {
+          "name": "19971998-daftpunk.com-daft-questions.thumbs/Screen Recording 2026-05-29 at 3.10.17 PM 2_000035.jpg",
+          "source": "derivative",
+          "format": "Thumbnail",
+          "original": "Screen Recording 2026-05-29 at 3.10.17 PM 2.mov",
+          "mtime": "1780093887",
+          "size": "37571",
+          "md5": "39d0530f722ce4d87c7c5cef435af159",
+          "crc32": "06499042",
+          "sha1": "541e47aa0f57211423e980d2a3bc3332129a390c"
+        },
+        {
+          "name": "19971998-daftpunk.com-daft-questions.thumbs/Screen Recording 2026-05-29 at 3.10.17 PM 2_000040.jpg",
+          "source": "derivative",
+          "format": "Thumbnail",
+          "original": "Screen Recording 2026-05-29 at 3.10.17 PM 2.mov",
+          "mtime": "1780093888",
+          "size": "37669",
+          "md5": "72afb71b98567db4df06b4d80e6b1890",
+          "crc32": "fb6298ac",
+          "sha1": "e8a2c10b79a5614730c835e88771ff6c86a9e6e5"
+        },
+        {
+          "name": "19971998-daftpunk.com-daft-questions_archive.torrent",
+          "source": "metadata",
+          "btih": "0ffc9f652495eaf034cf4399bbfb4d64c4eebece",
+          "mtime": "1780093937",
+          "size": "2849",
+          "md5": "77af3fe8d9467b8b9e3f50a7c4a99ccf",
+          "crc32": "cc64cb2c",
+          "sha1": "679df3d8135e9ca52041ab5469af283bd0919402",
+          "format": "Archive BitTorrent"
+        },
+        {
+          "name": "19971998-daftpunk.com-daft-questions_files.xml",
+          "source": "original",
+          "format": "Metadata",
+          "md5": "bfd17030ef66f0304d56984e4cc2c543",
+          "summation": "md5"
+        },
+        {
+          "name": "19971998-daftpunk.com-daft-questions_meta.sqlite",
+          "source": "original",
+          "mtime": "1780093834",
+          "size": "20480",
+          "md5": "c50f00ddbb16c8cb9d8ac21fc16bdd30",
+          "crc32": "5a5b5170",
+          "sha1": "ad215b5a1ee9130db4b1f42a609df09995a5c40c",
+          "format": "Metadata"
+        },
+        {
+          "name": "19971998-daftpunk.com-daft-questions_meta.xml",
+          "source": "original",
+          "mtime": "1780093856",
+          "size": "852",
+          "md5": "68d9e10cc94d3edd93e8c623e1fcc24d",
+          "crc32": "0e5d5bd9",
+          "sha1": "61b888af37454efd95f47d5e30676d658bf06002",
+          "format": "Metadata"
+        },
+        {
+          "name": "Screen Recording 2026-05-29 at 3.10.17 PM 2.mov",
+          "source": "original",
+          "mtime": "1780093794",
+          "size": "12508277",
+          "md5": "29588c010a4ff988d624e0eba04c8635",
+          "crc32": "ec930c4f",
+          "sha1": "649a5828de836c4dd15be552d3b9c34342b60b16",
+          "format": "QuickTime",
+          "length": "38.55",
+          "width": "990",
+          "height": "600"
+        },
+        {
+          "name": "Screen Recording 2026-05-29 at 3.10.17 PM 2.mp4",
+          "source": "derivative",
+          "format": "h.264",
+          "original": "Screen Recording 2026-05-29 at 3.10.17 PM 2.mov",
+          "mtime": "1780093920",
+          "size": "2996472",
+          "md5": "8de045470454a67afb6aed0d3b0a5fd8",
+          "crc32": "2f79e8a6",
+          "sha1": "024125ac3b45b4578f9178ffd265a8bbd8359651",
+          "length": "38.56",
+          "width": "792",
+          "height": "480"
+        },
+        {
+          "name": "__ia_thumb.jpg",
+          "source": "original",
+          "mtime": "1780093936",
+          "size": "14964",
+          "md5": "2aa32542e03dcc4ff18db8297f40c3f1",
+          "crc32": "3d7cedf4",
+          "sha1": "b1afa0a92e01331c2a7b7fd81415be3841ae0ad8",
+          "format": "Item Tile"
+        }
+      ],
+      "files_count": 16,
+      "item_last_updated": 1780093937,
+      "item_size": 16140976,
+      "metadata": {
+        "identifier": "19971998-daftpunk.com-daft-questions",
+        "mediatype": "movies",
+        "collection": "opensource_movies",
+        "creator": "Daft Punk",
+        "date": "1997",
+        "description": "Daft Punk self interview from 1997 / 1998",
+        "language": "eng",
+        "scanner": "Internet Archive HTML5 Uploader 1.7.0",
+        "subject": [
+          "Daft Punk",
+          "Interview",
+          "1997",
+          "1998"
+        ],
+        "title": "1997/1998 daftpunk.com - Daft Questions",
+        "uploader": "lukematthew1995@yahoo.com",
+        "publicdate": "2026-05-29 22:30:15",
+        "addeddate": "2026-05-29 22:30:15",
+        "curation": "[curator]validator@archive.org[/curator][date]20260529223056[/date][comment]checked for malware[/comment]"
+      },
+      "server": "ia800702.us.archive.org",
+      "uniq": 1321009667,
+      "workable_servers": [
+        "ia800702.us.archive.org",
+        "ia600702.us.archive.org"
+      ]
+    }
+  },
+  {
+    "url": "https://archive.org/download/19971998-daftpunk.com-daft-questions/19971998-daftpunk.com-daft-questions_files.xml",
+    "status": 200,
+    "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<files>\n  <file name=\"19971998-daftpunk.com-daft-questions.thumbs/Screen Recording 2026-05-29 at 3.10.17 PM 2_000001.jpg\" source=\"derivative\">\n    <format>Thumbnail</format>\n    <original>Screen Recording 2026-05-29 at 3.10.17 PM 2.mov</original>\n    <mtime>1780093879</mtime>\n    <size>74452</size>\n    <md5>47880265688bd5a117e81591f48c0d94</md5>\n    <crc32>ac47c656</crc32>\n    <sha1>4ebe4637769591011e3a2150804aad0f18f1b285</sha1>\n  </file>\n  <file name=\"19971998-daftpunk.com-daft-questions.thumbs/Screen Recording 2026-05-29 at 3.10.17 PM 2_000005.jpg\" source=\"derivative\">\n    <format>Thumbnail</format>\n    <original>Screen Recording 2026-05-29 at 3.10.17 PM 2.mov</original>\n    <mtime>1780093880</mtime>\n    <size>116248</size>\n    <md5>368ae13b16b4ef315164cf58583e0107</md5>\n    <crc32>7a488ea5</crc32>\n    <sha1>6c0817bc50a0f6e1620ee21cab383d4e2e74ea28</sha1>\n  </file>\n  <file name=\"19971998-daftpunk.com-daft-questions.thumbs/Screen Recording 2026-05-29 at 3.10.17 PM 2_000010.jpg\" source=\"derivative\">\n    <format>Thumbnail</format>\n    <original>Screen Recording 2026-05-29 at 3.10.17 PM 2.mov</original>\n    <mtime>1780093881</mtime>\n    <size>136342</size>\n    <md5>6c66f232b331b63a5bcab509985f8844</md5>\n    <crc32>98b8ff20</crc32>\n    <sha1>b892bfafdd5e691a5b630260b490b8a52216587e</sha1>\n  </file>\n  <file name=\"19971998-daftpunk.com-daft-questions.thumbs/Screen Recording 2026-05-29 at 3.10.17 PM 2_000015.jpg\" source=\"derivative\">\n    <format>Thumbnail</format>\n    <original>Screen Recording 2026-05-29 at 3.10.17 PM 2.mov</original>\n    <mtime>1780093882</mtime>\n    <size>68606</size>\n    <md5>6e39b4116122c9826da60c70198fead0</md5>\n    <crc32>208aba76</crc32>\n    <sha1>eb57fa20cb61cc9bca2d1c443ccc22293bf62c61</sha1>\n  </file>\n  <file name=\"19971998-daftpunk.com-daft-questions.thumbs/Screen Recording 2026-05-29 at 3.10.17 PM 2_000020.jpg\" source=\"derivative\">\n    <format>Thumbnail</format>\n    <original>Screen Recording 2026-05-29 at 3.10.17 PM 2.mov</original>\n    <mtime>1780093883</mtime>\n    <size>50843</size>\n    <md5>15ef74105560e89b8e8c52f785791e4e</md5>\n    <crc32>68626b81</crc32>\n    <sha1>c4dba3f308354dbb2792d8016b129116c218716e</sha1>\n  </file>\n  <file name=\"19971998-daftpunk.com-daft-questions.thumbs/Screen Recording 2026-05-29 at 3.10.17 PM 2_000025.jpg\" source=\"derivative\">\n    <format>Thumbnail</format>\n    <original>Screen Recording 2026-05-29 at 3.10.17 PM 2.mov</original>\n    <mtime>1780093885</mtime>\n    <size>37614</size>\n    <md5>0819648e105c2d7fad7e535c931032f3</md5>\n    <crc32>d77c9441</crc32>\n    <sha1>60cf05b934c378d428146a6c58ae37d8f6e3c6bd</sha1>\n  </file>\n  <file name=\"19971998-daftpunk.com-daft-questions.thumbs/Screen Recording 2026-05-29 at 3.10.17 PM 2_000030.jpg\" source=\"derivative\">\n    <format>Thumbnail</format>\n    <original>Screen Recording 2026-05-29 at 3.10.17 PM 2.mov</original>\n    <mtime>1780093886</mtime>\n    <size>37737</size>\n    <md5>253969dfe9be841824e7d6f24f205cb7</md5>\n    <crc32>26e73dbb</crc32>\n    <sha1>c5b43ea4021e143cc9694cdf219b92a6f27dfd62</sha1>\n  </file>\n  <file name=\"19971998-daftpunk.com-daft-questions.thumbs/Screen Recording 2026-05-29 at 3.10.17 PM 2_000035.jpg\" source=\"derivative\">\n    <format>Thumbnail</format>\n    <original>Screen Recording 2026-05-29 at 3.10.17 PM 2.mov</original>\n    <mtime>1780093887</mtime>\n    <size>37571</size>\n    <md5>39d0530f722ce4d87c7c5cef435af159</md5>\n    <crc32>06499042</crc32>\n    <sha1>541e47aa0f57211423e980d2a3bc3332129a390c</sha1>\n  </file>\n  <file name=\"19971998-daftpunk.com-daft-questions.thumbs/Screen Recording 2026-05-29 at 3.10.17 PM 2_000040.jpg\" source=\"derivative\">\n    <format>Thumbnail</format>\n    <original>Screen Recording 2026-05-29 at 3.10.17 PM 2.mov</original>\n    <mtime>1780093888</mtime>\n    <size>37669</size>\n    <md5>72afb71b98567db4df06b4d80e6b1890</md5>\n    <crc32>fb6298ac</crc32>\n    <sha1>e8a2c10b79a5614730c835e88771ff6c86a9e6e5</sha1>\n  </file>\n  <file name=\"19971998-daftpunk.com-daft-questions_archive.torrent\" source=\"metadata\">\n    <btih>0ffc9f652495eaf034cf4399bbfb4d64c4eebece</btih>\n    <mtime>1780093937</mtime>\n    <size>2849</size>\n    <md5>77af3fe8d9467b8b9e3f50a7c4a99ccf</md5>\n    <crc32>cc64cb2c</crc32>\n    <sha1>679df3d8135e9ca52041ab5469af283bd0919402</sha1>\n    <format>Archive BitTorrent</format>\n  </file>\n  <file name=\"19971998-daftpunk.com-daft-questions_files.xml\" source=\"original\">\n    <format>Metadata</format>\n    <md5>bfd17030ef66f0304d56984e4cc2c543</md5>\n    <summation>md5</summation>\n  </file>\n  <file name=\"19971998-daftpunk.com-daft-questions_meta.sqlite\" source=\"original\">\n    <mtime>1780093834</mtime>\n    <size>20480</size>\n    <md5>c50f00ddbb16c8cb9d8ac21fc16bdd30</md5>\n    <crc32>5a5b5170</crc32>\n    <sha1>ad215b5a1ee9130db4b1f42a609df09995a5c40c</sha1>\n    <format>Metadata</format>\n  </file>\n  <file name=\"19971998-daftpunk.com-daft-questions_meta.xml\" source=\"original\">\n    <mtime>1780093856</mtime>\n    <size>852</size>\n    <md5>68d9e10cc94d3edd93e8c623e1fcc24d</md5>\n    <crc32>0e5d5bd9</crc32>\n    <sha1>61b888af37454efd95f47d5e30676d658bf06002</sha1>\n    <format>Metadata</format>\n  </file>\n  <file name=\"Screen Recording 2026-05-29 at 3.10.17 PM 2.mov\" source=\"original\">\n    <mtime>1780093794</mtime>\n    <size>12508277</size>\n    <md5>29588c010a4ff988d624e0eba04c8635</md5>\n    <crc32>ec930c4f</crc32>\n    <sha1>649a5828de836c4dd15be552d3b9c34342b60b16</sha1>\n    <format>QuickTime</format>\n    <length>38.55</length>\n    <width>990</width>\n    <height>600</height>\n  </file>\n  <file name=\"Screen Recording 2026-05-29 at 3.10.17 PM 2.mp4\" source=\"derivative\">\n    <format>h.264</format>\n    <original>Screen Recording 2026-05-29 at 3.10.17 PM 2.mov</original>\n    <mtime>1780093920</mtime>\n    <size>2996472</size>\n    <md5>8de045470454a67afb6aed0d3b0a5fd8</md5>\n    <crc32>2f79e8a6</crc32>\n    <sha1>024125ac3b45b4578f9178ffd265a8bbd8359651</sha1>\n    <length>38.56</length>\n    <width>792</width>\n    <height>480</height>\n  </file>\n  <file name=\"__ia_thumb.jpg\" source=\"original\">\n    <mtime>1780093936</mtime>\n    <size>14964</size>\n    <md5>2aa32542e03dcc4ff18db8297f40c3f1</md5>\n    <crc32>3d7cedf4</crc32>\n    <sha1>b1afa0a92e01331c2a7b7fd81415be3841ae0ad8</sha1>\n    <format>Item Tile</format>\n  </file>\n</files>\n"
+  }
+]

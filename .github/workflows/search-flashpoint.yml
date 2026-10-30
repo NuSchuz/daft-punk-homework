@@ -1,0 +1,53 @@
+name: Search Flashpoint for original Daft Punk assets
+on:
+  push:
+    paths: ['.github/workflows/search-flashpoint.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - name: Search Flashpoint official API and historical database
+        run: |
+          cat > /tmp/search.py <<'PY'
+          import urllib.request,urllib.parse,json,time,concurrent.futures
+          from pathlib import Path
+          queries=['Daft Punk','daftpunk','Daft Punk Sequencer','Phoenix','Daft Club','Da Funk','daftpunk.com','src:daftpunk.com','source:daftpunk.com','lc:daftpunk.com','launchCommand:daftpunk.com','platform:Shockwave "Daft"']
+          jobs=[]
+          for q in queries:
+            jobs.append(('2026-'+q,'https://flashpointarchive.org/api/search?'+urllib.parse.urlencode({'query':q})))
+            jobs.append(('2024-'+q,'https://db-api.unstable.life/search?'+urllib.parse.urlencode({'title':q,'fields':'id,title,platform,source,launchCommand,notes,developer,publisher,status,alternateTitles,zipped'})))
+          jobs.append(('flashpoint-new-root','https://flashpointarchive.org/api/'))
+          def get(item):
+            name,url=item
+            try:
+              req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 (compatible; historical-preservation/1.0)'})
+              with urllib.request.urlopen(req,timeout=22) as r:
+                raw=r.read(5000000).decode('utf-8','replace')
+                try: data=json.loads(raw)
+                except:data={'raw':raw[:1000]}
+                return dict(name=name,status=r.status,url=url,data=data)
+            except Exception as e:return dict(name=name,url=url,error=str(e)[:200])
+          with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:out=list(pool.map(get,jobs))
+          for x in out:
+            data=x.get('data')
+            print('===',x['name'],'HTTP',x.get('status'),x.get('error'),'TYPE',type(data).__name__)
+            if isinstance(data,list):
+              print('COUNT',len(data))
+              for i in data[:20]:print('RESULT',json.dumps(i,ensure_ascii=False)[:1100])
+            else:print('BODY',json.dumps(data,ensure_ascii=False)[:500])
+          Path('flashpoint_search_results.json').write_text(json.dumps(out,ensure_ascii=False,indent=2))
+          PY
+          python3 /tmp/search.py
+      - name: Commit verified search results
+        if: always()
+        run: |
+          test -s flashpoint_search_results.json || exit 0
+          git add flashpoint_search_results.json
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Record Flashpoint archive search results [skip ci]'
+          git pull --rebase origin main
+          git push origin HEAD:main

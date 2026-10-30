@@ -18,18 +18,21 @@ button{background:#baff5b;border:0;color:#111a06;font:bold 13px monospace;paddin
 <header><strong>DAFT PUNK / SEQUENCER TOY</strong><nav><a href="index.html">HOME</a><a href="daftpunk.sit.hqx" download>1998 ARCHIVE</a></nav></header>
 <main><h1>THE ORIGINAL MACINTOSH TOY</h1>
 <p>This is the preserved 1998 sequencer, inside an emulated Power Macintosh running Mac OS 8.1.</p>
-<button id="start">START THE MACINTOSH</button>
+<button id="start">START THE MACINTOSH</button><button id="retry" style="display:none;background:#314325;color:#d4ff98">TRY ALTERNATE DISK HOST</button>
 <p id="status">Click to start. The classic Mac will load from Infinite Mac.</p>
-<div id="outer"><iframe id="mac" allow="cross-origin-isolated; autoplay; fullscreen" title="Emulated Power Macintosh with the original Daft Punk Sequencer Toy"></iframe></div>
+<p id="hint" style="display:none;color:#c9cbb7">If the emulator reports a CD-ROM HEAD/Content-Length error, tap <b>TRY ALTERNATE DISK HOST</b>. This restarts the Mac with a different download server.</p><div id="outer"><iframe id="mac" allow="cross-origin-isolated; autoplay; fullscreen" title="Emulated Power Macintosh with the original Daft Punk Sequencer Toy"></iframe></div>
 <div class="details"><strong>HOW TO PLAY</strong><br>
 1. Once Mac OS 8.1 boots, open the desktop disk labelled <strong>DAFT PUNK TOY</strong>.<br>
 2. Double-click <strong>phoenix</strong> in that disk to start the original program.<br>
 3. Click or tap inside the emulator if sound is muted. This vintage program may still have compatibility limitations.<br>
 On a phone, landscape orientation is recommended.</div></main>
 <script>
-(()=>{const btn=document.getElementById('start'),frame=document.getElementById('mac'),outer=document.getElementById('outer'),status=document.getElementById('status');let started=false;
+(()=>{const btn=document.getElementById('start'),retry=document.getElementById('retry'),frame=document.getElementById('mac'),outer=document.getElementById('outer'),status=document.getElementById('status'),hint=document.getElementById('hint');let started=false;
 function fit(){if(!started)return;const scale=Math.min(1,outer.clientWidth/640);frame.style.transform='scale('+scale+')';outer.style.height=(480*scale+2)+'px';}
-btn.onclick=()=>{if(started)return;started=true;const disk=new URL('daft-punk-toy.img',location.href).href;const params=new URLSearchParams({disk:'Mac OS 8.1',machine:'Power Macintosh 9500',infinite_hd:'true',disk_url:disk,screenSize:'640x480',auto_pause:'true'});frame.src='https://infinitemac.org/embed?'+params;outer.style.display='block';btn.textContent='MACINTOSH STARTED';btn.disabled=true;status.textContent='Starting Mac OS 8.1 with the original toy disk...';fit();};window.addEventListener('resize',fit);
+function launch(alternate){started=true;const pages=new URL('daft-punk-toy.img',location.href).href;const cdn='https://cdn.jsdelivr.net/gh/NuSchuz/daft-punk-homework@main/assets/daft-punk-toy.img';const disk=alternate?cdn:pages;const params=new URLSearchParams({disk:'Mac OS 8.1',machine:'Power Macintosh 9500',infinite_hd:'true',disk_url:disk,screenSize:'640x480',auto_pause:'true'});frame.src='https://infinitemac.org/embed?'+params;outer.style.display='block';btn.textContent='MACINTOSH STARTED';btn.disabled=true;retry.style.display='inline-block';hint.style.display='block';status.textContent='Starting Mac OS 8.1 using '+(alternate?'the alternate CDN':'GitHub Pages')+' disk host...';fit();}
+btn.onclick=()=>launch(false);
+retry.onclick=()=>{retry.textContent='RETRYING WITH BACKUP HOST';launch(true);};
+window.addEventListener('resize',fit);
 window.addEventListener('message',e=>{if(e.origin!=='https://infinitemac.org')return;if(e.data?.type==='emulator_loaded')status.textContent='Macintosh booting. Open DAFT PUNK TOY on the desktop.';if(e.data?.type==='emulator_error')status.textContent='Emulator error: '+String(e.data.error||'unknown error');});
 })();
 </script></body></html>

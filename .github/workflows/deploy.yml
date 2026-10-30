@@ -1,0 +1,59 @@
+name: Deploy Daft Punk Homework restoration
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'Daft_Punk_Homework_GitHub_Pages_Ready.zip'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    if: github.event_name == 'workflow_dispatch' || github.event.head_commit.message != ''
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract the verified restoration
+        run: |
+          set -euo pipefail
+          ZIP="Daft_Punk_Homework_GitHub_Pages_Ready.zip"
+          if [ ! -f "$ZIP" ]; then
+            echo "::error::Missing $ZIP. Upload the ZIP file to the repository root."
+            exit 1
+          fi
+          mkdir -p public
+          unzip -q "$ZIP" -d public
+          test -s public/index.html
+          test -s public/menu.dcr
+          test -s public/player/dirplayer-polyfill.js
+          test -s public/player/ruffle/5e2fd696fbae2cd6d375.wasm
+          touch public/.nojekyll
+          echo "Restoration files extracted:"
+          find public -type f | wc -l
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site to GitHub Pages
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: public
+
+      - name: Publish site
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -44,10 +44,56 @@ def as_macbinary(name,data,rsrc,kind,creator):
     def pad(b):return b+b"\0"*((-len(b))%128)
     return bytes(h)+pad(data)+pad(rsrc)
 
+
+def decode_binhex(source,destination):
+    # BinHex 4.0: six-bit alphabet, run-length encoding, Mac file header.
+    alphabet=b'!"#$%&\\'()*+,-012345689@ABCDEFGHIJKLMNPQRSTUVXYZ[`abcdefhijklmpqr'
+    lookup={x:i for i,x in enumerate(alphabet)}
+    raw=source.read_bytes()
+    start=raw.find(b':')
+    end=raw.find(b':',start+1)
+    if start<0 or end<0:raise ValueError("Invalid BinHex envelope")
+    bits=0
+    nbits=0
+    packed=bytearray()
+    for byte in raw[start+1:end]:
+        if byte in b' \\r\\n\\t':continue
+        if byte not in lookup:raise ValueError("Invalid BinHex alphabet")
+        bits=(bits<<6)|lookup[byte]
+        nbits+=6
+        if nbits>=8:
+            nbits-=8
+            packed.append((bits>>nbits)&255)
+            bits&=(1<<nbits)-1
+    unpacked=bytearray()
+    index=0
+    while index<len(packed):
+        byte=packed[index]
+        index+=1
+        if byte==0x90:
+            if index>=len(packed):raise ValueError("Invalid BinHex RLE")
+            repeat=packed[index]
+            index+=1
+            if repeat==0:unpacked.append(0x90)
+            else:unpacked.extend([unpacked[-1]]*(repeat-1))
+        else:unpacked.append(byte)
+    name_length=unpacked[0]
+    offset=name_length+1+1+4+4+2
+    data_length,resource_length=struct.unpack_from(">II",unpacked,offset)
+    content_start=offset+4+4+2
+    if resource_length:raise ValueError("Unexpected BinHex wrapper resource fork")
+    data=bytes(unpacked[content_start:content_start+data_length])
+    if len(data)!=data_length or data[:4]!=b"SIT!":raise ValueError("Invalid extracted StuffIt archive")
+    destination.write_bytes(data)
+    print("Decoded BinHex into StuffIt",len(data),"bytes",flush=True)
+
+
 if not source.is_file():raise SystemExit("Missing original daftpunk.sit.hqx")
 with tempfile.TemporaryDirectory() as temp:
     scratch=Path(temp)
-    run("unar","-quiet","-forks","visible","-output-directory",scratch,source)
+    sit=scratch/"daftpunk.sit"
+    decode_binhex(source,sit)
+    run("unar","-quiet","-forks","visible","-output-directory",scratch/"expanded",sit)
     def app_files():
         return [p for p in scratch.rglob("*") if p.is_file() and p.name.lower()=="phoenixobot.dcr"]
     print("After first extraction:",[(str(p.relative_to(scratch)),p.stat().st_size) for p in scratch.rglob("*") if p.is_file()][:30],flush=True)

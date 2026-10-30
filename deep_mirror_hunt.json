@@ -1,0 +1,551 @@
+[
+  {
+    "label": "IA SEARCH title:(\"Daft Punk\" AND website)",
+    "status": 200,
+    "url": "https://archive.org/advancedsearch.php?q=title%3A%28%22Daft+Punk%22+AND+website%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=description&fl%5B%5D=mediatype&rows=100&page=1&output=json",
+    "count": 0,
+    "results": []
+  },
+  {
+    "label": "IA SEARCH title:(daftpunk)",
+    "status": 200,
+    "url": "https://archive.org/advancedsearch.php?q=title%3A%28daftpunk%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=description&fl%5B%5D=mediatype&rows=100&page=1&output=json",
+    "count": 27,
+    "results": [
+      {
+        "date": "2014-01-01T00:00:00Z",
+        "description": "#Daftpunk works with everything #deaf #blind #learning #intervention #memory #tricks #howto #KennethUdut-MW3zVE1EVqr.mp4 Daftpunk works with everything deaf blind learning intervention memory tricks howto KennethUdut MW3zVE1EVqr mp4 Daftpunk deaf blind learning intervention memory tricks howto KennethUdut",
+        "identifier": "DaftpunkWorksWithEverythingDeafBlindLearningInterventionMemoryTricksHowtoKenne",
+        "mediatype": "movies",
+        "title": "#Daftpunk works with everything #deaf #blind #learning #intervention #memory #tricks #howto #KennethUdut-MW3zVE1EVqr.mp4 Daftpunk works with everything deaf blind learning intervention memory tricks howto KennethUdut MW3zVE1EVqr mp4 Daftpunk deaf blind learning intervention memory tricks howto KennethUdut"
+      },
+      {
+        "date": "2017-10-04T00:00:00Z",
+        "description": "I was asked by a colleague if it was possible to measure a curve, specifically, for the visor/shield for the Daft_Punk_Helmet, so that the visor could be laser cut from acrylic sheet and heated on a form to shape. When I imported the STL file into Solidworks, the translated the dimensions directly to inches which i wasn't able to work around. So, I remodeled the visor, scaled it down, and generated a flat surface that I could measure. I hope others find this useful as well.",
+        "identifier": "thingiverse-2568416",
+        "mediatype": "data",
+        "title": "Daftpunk Helmet [Thomas Bangalter] (Partial Remix) (2568416)"
+      },
+      {
+        "description": "DaftPunk Favorites",
+        "identifier": "fav-daftpunk",
+        "mediatype": "collection",
+        "title": "DaftPunk Favorites"
+      },
+      {
+        "date": "2013-11-01T00:00:00Z",
+        "description": "This badass octopus DJ spins and swims. Remix DaftPunkTopus at http://ree.mx/1b0xYqu or upload your own models at http://matter.io/remix",
+        "identifier": "thingiverse-175597",
+        "mediatype": "data",
+        "title": "DaftPunk-Topus (175597)"
+      },
+      {
+        "description": "Alive 97",
+        "identifier": "daftpunk-2022-02-22-23h-07m-49s",
+        "mediatype": "movies",
+        "title": "Daftpunk 2022 02 22 23h 07m 49s"
+      },
+      {
+        "date": "2013-11-26T00:00:00Z",
+        "description": "#literallyric #literal #lyrics #nightcore #daftpunk #workitharder #makeitbetter #kayne #kaynewest #stronger i take things literally-hUwjuFOTzqQ.mp4",
+        "identifier": "Literallyricliterallyricsnightcoredaftpunkworkithardermakeitbetterkaynekaynewest",
+        "mediatype": "movies",
+        "title": "#literallyric #literal #lyrics #nightcore #daftpunk #workitharder #makeitbetter #kayne #kaynewest #stronger I Take Things Literally H Uwju FOTzq Q"
+      },
+      {
+        "date": "2014-04-10T00:00:00Z",
+        "description": "In case you don't believe me that. #whatsoesthefoxsay #ylvis and #daftpunk #GetLucky are the same, here we go! XD-M5xJjx5IUaM.mp4",
+        "identifier": "InCaseYouDontBelieveMeThatWhatsoesthefoxsayYlvisAndDaftpunkGetluckyAreTheSameHe",
+        "mediatype": "movies",
+        "title": "In case you don't believe me that. #whatsoesthefoxsay #ylvis and #daftpunk #GetLucky are the same, here we go! XD"
+      },
+      {
+        "date": "2019-02-22T00:00:00Z",
+        "description": "mini version of my home made CAD model of daft punk member guy manuel",
+        "identifier": "thingiverse-3445694",
+        "mediatype": "data",
+        "title": "GUY-MANUEL DAFTPUNK HELMET (3445694)"
+      },
+      {
+        "date": "2015-09-30T00:00:00Z",
+        "description": "This is the LED Arduino code that I used to drive the light in my helmet http://www.thingiverse.com/make:152597 The Arduino drives two banks of mirrored WS2811 LEDS and uses the FASTLED library: http://fastled.io/ The code is rushed an was built on the palette sample. I was in a hurry at the time to get to my fancy dress party :-) There's nothing stopping you also treating the 4x8 array of LEDs on each side of the helmet as a matrix. Rename the attached STL file to INO",
+        "identifier": "thingiverse-1045006",
+        "mediatype": "data",
+        "title": "DaftPunk Arduino LED Code (1045006)"
+      },
+      {
+        "date": "2013-12-11T00:00:00Z",
+        "description": "#daftpunk #hershey #illstoptheworldandmeltwithyou #instantcrush #juliancasablancas-hQYnX95KFEt.mp4",
+        "identifier": "DaftpunkhersheyillstoptheworldandmeltwithyouinstantcrushjuliancasablancasHQYnX95KFEt",
+        "mediatype": "movies",
+        "title": "#daftpunk #hershey #illstoptheworldandmeltwithyou #instantcrush #juliancasablancas H QYn X 95 KFEt"
+      },
+      {
+        "date": "2016-09-10T00:00:00Z",
+        "description": "I broke this into six separate prints to allow for printing on a smaller print bed 200x200x180 I will update with more pics as I get them. Enjoy",
+        "identifier": "thingiverse-1762980",
+        "mediatype": "data",
+        "title": "Daftpunk Helmet [Thomas Bangalter] _Credit to Pedro Ruiz @adafruit (1762980)"
+      },
+      {
+        "date": "2015-12-31T00:00:00Z",
+        "description": "https://www.youtube.com/watch?v=egDaxJqiv7Q full guide on: https://learn.adafruit.com/3d-printed-daft-punk-helmet-with-bluetooth Build a Daft Punk Thomas Helmet with bluetooth control! In this project we'll build the iconic Daft Punk Helmet with the ability to change animations and colors with your smart phone and watch! In a previous project we made Guy-Manuel\u2019s helmet and 3D printed it in just one piece. This time around we wanted to make Thomas Bangalter\u2019s helmet but this time we wanted to make it lighter, have the ability to see through it and even apply some finishing techniques.",
+        "identifier": "thingiverse-1220680",
+        "mediatype": "data",
+        "title": "Daftpunk Helmet [Thomas Bangalter] (1220680)"
+      },
+      {
+        "date": "2015-01-01T00:00:00Z",
+        "description": "#kids #art at the #library - I don't know the grades here. #daftpunk #creativity is hard #work when you have to do it in #school -izIx9lben9n",
+        "identifier": "KidsArtAtTheLibraryIDonTKnowTheGradesHereDaftpunkCreativityIsHardWorkWhenYouHav",
+        "mediatype": "movies",
+        "title": "#kids #art at the #library - I don't know the grades here. #daftpunk #creativity is hard #work when you have to do it in #school -izIx9lben9n"
+      },
+      {
+        "date": "2014-04-10T00:00:00Z",
+        "description": "Did you know #whatsoesthefoxsay by #ylvis and #getlucky by #daftpunk are the same song Listen!!-M5x5hjM0uZa.mp4",
+        "identifier": "DidYouKnowWhatsoesthefoxsayByYlvisAndGetluckyByDaftpunkAreTheSameSongListen-M5x",
+        "mediatype": "movies",
+        "title": "Did you know #whatsoesthefoxsay by #ylvis and #getlucky by #daftpunk are the same song Listen!!"
+      },
+      {
+        "date": "2015-06-22T00:00:00Z",
+        "description": "#childhoodtoys #daftpunk #Throwback get it cause it's a #robot and doesn't understand touch cause it's not human but it's trying and.. Nvm -e5q30FHMdpd",
+        "identifier": "ChildhoodtoysDaftpunkThrowbackGetItCauseItSARobotAndDoesnTUnderstandTouchCauseI",
+        "mediatype": "movies",
+        "title": "#childhoodtoys #daftpunk #Throwback get it cause it's a #robot and doesn't understand touch cause it's not human but it's trying and.. Nvm -e5q30FHMdpd"
+      },
+      {
+        "date": "2014-01-03T00:00:00Z",
+        "description": "#daftpunk is nice in the morning #loop-hYawPtLhgEP.mp4",
+        "identifier": "DaftpunkIsNiceInTheMorningloopHYawPtLhgEP",
+        "mediatype": "movies",
+        "title": "#daftpunk Is Nice In The Morning #loop H Yaw Pt Lhg EP"
+      },
+      {
+        "date": "2021-02-23T00:00:00Z",
+        "description": "One more time for the legends, #DaftPunk. https://t.co/95C6ojpL71 https://t.co/Wd6h19DGrG Source: https://twitter.com/Snapchat/status/1364086170762809346 Uploader: Snapchat",
+        "identifier": "twitter-1364086170762809346",
+        "mediatype": "movies",
+        "title": "Snapchat - One more time for the legends, #DaftPunk."
+      },
+      {
+        "date": "2014-04-10T00:00:00Z",
+        "description": "#Daftpunk #aroundtheworld loop #attempt remember this classic from, well a very long time ago. XD-M5DM3n2DKKj.mp4",
+        "identifier": "DaftpunkAroundtheworldLoopAttemptRememberThisClassicFromWellAVeryLongTimeAgoXd-",
+        "mediatype": "movies",
+        "title": "#Daftpunk #aroundtheworld loop #attempt remember this classic from, well a very long time ago. XD"
+      },
+      {
+        "description": "keyspan",
+        "identifier": "daftpunk_202101",
+        "mediatype": "movies",
+        "title": "daftpunk"
+      },
+      {
+        "date": "2015-01-01T00:00:00Z",
+        "description": "Ah - he's into #daftpunk + has #robot dreams. -eYxTnw9prXQ",
+        "identifier": "AhHeSIntoDaftpunkHasRobotDreamsEyxtnw9prxq",
+        "mediatype": "movies",
+        "title": "Ah - he's into #daftpunk + has #robot dreams. -eYxTnw9prXQ"
+      },
+      {
+        "description": "yeah",
+        "identifier": "daftpunk_202301",
+        "mediatype": "audio",
+        "title": "Daftpunk"
+      },
+      {
+        "date": "2025-03-24T00:00:00Z",
+        "description": "daftpunk discografia completa",
+        "identifier": "daftpunk-discografia",
+        "mediatype": "audio",
+        "title": "Daftpunk Discografia"
+      },
+      {
+        "description": "daft punk",
+        "identifier": "daftpunk_20210112",
+        "mediatype": "movies",
+        "title": "daftpunk"
+      },
+      {
+        "description": "We Will Rrobot Rock You",
+        "identifier": "RobotrockDaftpunkQueen",
+        "mediatype": "audio",
+        "title": "RobotRock Daftpunk Queen"
+      },
+      {
+        "date": "2014-05-04T00:00:00Z",
+        "description": "20x #workitharder #daftpunk I like fast xD-Mr3H9DupLij.mp4 20x workitharder daftpunk I like fast xD Mr3H9DupLij mp4 workitharder daftpunk",
+        "identifier": "20xWorkitharderDaftpunkILikeFastXdMr3h9duplijMp4WorkitharderDaftpunk",
+        "mediatype": "movies",
+        "title": "20x #workitharder #daftpunk I like fast xD-Mr3H9DupLij.mp4 20x workitharder daftpunk I like fast xD Mr3H9DupLij mp4 workitharder daftpunk"
+      },
+      {
+        "description": "all daft punk album was in archive.org",
+        "identifier": "daftpunk_202509",
+        "mediatype": "audio",
+        "title": "All album of daftpunk"
+      },
+      {
+        "date": "2021-03-10T00:00:00Z",
+        "description": "it hurts #daftpunk",
+        "identifier": "TikTok-6937894446717603078",
+        "mediatype": "movies",
+        "title": "it hurts #daftpunk"
+      }
+    ]
+  },
+  {
+    "label": "IA SEARCH description:(\"daftpunk.com\")",
+    "status": 200,
+    "url": "https://archive.org/advancedsearch.php?q=description%3A%28%22daftpunk.com%22%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=description&fl%5B%5D=mediatype&rows=100&page=1&output=json",
+    "count": 2,
+    "results": [
+      {
+        "date": "2020-05-02T00:00:00Z",
+        "description": "\ud83c\udfb5 Follow 7clouds on Spotify : http://bit.ly/7CLOUDS \ud83c\udfa7 Daft Punk - Get Lucky (Lyrics) ft. Pharrell Williams, Nile Rodgers \u23ec Download / Stream: http://smarturl.it/DPRAMiTunes \ud83d\udd14 Turn on notifications to stay updated with new uploads! \ud83d\udc49 Daft Punk: https://daftpunk.com/ https://facebook.com/daftpunk \u2764\ufe0f Follow our Spotify playlists: http://bit.ly/7cloudsSpotify \u2601\ufe0f 7clouds: https://open.spotify.com/user/7cloudsmusic https://instagram.com/7cloudsmusic https://facebook.com/7cloudsmusic https://twitter.com/7cloudsmusic ......... \ud83c\udfa4 Lyrics: Daft Punk - Get Lucky (ft. Pharrell Williams, Nile Rodgers) [Verse 1: Pharrell] Like the legend of the phoenix (hah) All ends with beginnings What keeps the planet spinning (u-huh) The force from the beginning (ha) Look [Pre-Chorus: Pharrell] We've come too far To give up who we are So let's raise the bar And our cups to the stars [Chorus: Pharrell] She's up all night to the sun, I'm up all night to get some She's up all night for good fun, I'm up all night to get lucky We're up all night to the sun, we're up all night to get some We're up all night for good fun, we're up all night to get lucky We're up all night to get lucky, we're up all night to get lucky We're up all night to get lucky, we're up all night to get lucky [Verse 2: Pharrell] The present has no ribbon Your gift keeps on giving What is this I'm feeling? If you wanna leave, I'm with it (aha) [Pre-Chorus: Pharrell] We've come too far To give up who we are So let's raise the bar And our cups to the stars [Chorus: Pharrell] She's up all night to the sun, I'm up all night to get some She's up all night for good fun, I'm up all night to get lucky We're up all night to the sun, we're up all night to get some We're up all night for good fun, we're up all night to get lucky We're up all night to get lucky, we're up all night to get lucky We're up all night to get lucky, we're up all night to get lucky [Bridge: Daft Punk] We're up all night to get We're up all night to get We're up all night to get We're up all night to get We're up all night to get back together We're up all night to get (let's get funked again!) We're up all night to get (funky) We're up all night to get lu- We're up all night to get lucky We're up all night to get lucky We're up all night to get lucky We're up all night to get lucky We're up all night to get lucky We're up all night to get lucky We're up all night to get lucky We're up all night to get lucky [Pre-Chorus: Pharrell] We've come too far To give up who we are So let's raise the bar And our cups to the stars [Chorus: Pharrell] She's up all night to the sun, I'm up all night to get some She's up all night for good fun, I'm up all night to get lucky We're up all night to the sun, we're up all night to get some We're up all night for good fun, we're up all night to get lucky We're up all night to get lucky, we're up all night to get lucky We're up all night to get lucky, we're up all night to get lucky [Outro: Pharrell] We're up all night to get lucky We're up all night to get lucky We're up all night to get lucky We're up all night to get lucky ......... \ud83d\udcf7 Wallpaper: https://unsplash.com/ ......... \ud83d\udce7 Contact / Demo Submissions: contact@7clouds.org ......... \ud83d\udc8c Demos / Music Submissions: https://7clouds.edmdistrict.com ......... #DaftPunk #GetLucky #Lyrics #PharrellWilliams #NileRodgers Source: https://www.youtube.com/watch?v=5glDAaCaazc Uploader: 7clouds",
+        "identifier": "youtube-5glDAaCaazc",
+        "mediatype": "movies",
+        "title": "Daft Punk - Get Lucky (Lyrics) ft. Pharrell Williams, Nile Rodgers"
+      },
+      {
+        "date": "2020-04-10T00:00:00Z",
+        "description": "I designed this ring inspired by the rings sold on the daft punk site : > https://daftpunk.com/products/han-cholo-steel-thomas-ring",
+        "identifier": "thingiverse-4275081",
+        "mediatype": "data",
+        "title": "Daft Punk Ring (4275081)"
+      }
+    ]
+  },
+  {
+    "label": "IA SEARCH title:(\"Daft Punk\" AND (archive OR site OR backup))",
+    "status": 200,
+    "url": "https://archive.org/advancedsearch.php?q=title%3A%28%22Daft+Punk%22+AND+%28archive+OR+site+OR+backup%29%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=description&fl%5B%5D=mediatype&rows=100&page=1&output=json",
+    "count": 4,
+    "results": [
+      {
+        "description": "Site\u00a0",
+        "identifier": "ytdown.com-you-tube-kanye-west-on-site-v-1-prod-daft-punk-tgf-media-yagkrx-zuyk-a-001-1080p",
+        "mediatype": "movies",
+        "title": "Kanye West - On Site (v1) (prod. Daft Punk) | TGFD"
+      },
+      {
+        "description": "Overview This project aims to archive all currently known bootlegs from Daft Punk's Alive 2006/2007 Tour Why? In a world where YouTube uploads and SoundCloud downloaders reign supreme, it is important to ensure that the original variants and versions of each of these bootlegs are archived in an easy-to-access location to avoid inferior versions being passed around, such as the case with the news outlet ElectroBlog who had notoriously distributed low-quality YouTube rips of a handful of Daft Punk bootlegs Note This archive has NOT been put together with the intent for these files to be re-uploaded to streaming platforms, as most (If not all) of these bootlegs are already up on platforms like YouTube, SoundCloud and Mixcloud, and uploading more copies to streaming sites is only harming the archival of these original\u00a0 files, and making it easier for inferior / transcoded rips to be passed around. We have already started seeing 4th generation re-uploads appearing on YouTube \u00a0and being spread on places like SoulSeek , making for a file that has been re-encoded 5 times!!! How? Each bootleg has been meticulously verified and compared against reputable sources to ensure each is the original and / or highest quality file / rip of each set.\u00a0 \u00a0- For older bootlegs that originated from Scene releases and/or P2P sites (I.E. Napster, AudioGalaxy, Limewire etc.) the original (Or closest to original) version has been sourced from Blogs, Torrent Trackers and other distribution sites that hold copies of the recordings from around the time that these were initially distributed online. \u00a0- For those that only originated via streaming sites (I.E. SoundCloud, Mixcloud, YouTube etc.) these have been ripped from their respective original uploads (Not re-uploads) using the adequate tools / methods to extract the highest quality audio stream from each respective site. \u00a0- For those that originally originate from a video recording , the audio of these has been extracted from their respective original videos using tools that avoid the re-encoding of the audio. \u00a0- For those that have known physical releases (Tape, CD etc.) these have been ripped in FLAC and as close to 100% accuracy as possible (Where applicable) Additional Notes A handful of these recordings have been cropped so as to only include the sections that feature Daft Punk's set. This has been done with the aid of FFMPEG, which has allowed these to be cropped in a way that there would be no re-encoding or quality loss. Thanks Thanks to all of those who have assisted in the ripping and hunting process for this archive, your efforts have been extremely appreciated by myself as well as the wider community!",
+        "identifier": "daft-punk-alive-06-07-bootleg-archive",
+        "mediatype": "audio",
+        "title": "Daft Punk - Definitve Alive 2006 & Alive 2007 Bootleg Archive"
+      },
+      {
+        "date": "2017-02-10T00:00:00Z",
+        "description": "Daft Punk facebook live video showing their Pop-Up Shop",
+        "identifier": "2017.02.10-daft-punk-take-a-trip-into-the-daft-punk-archive...",
+        "mediatype": "movies",
+        "title": "2017.02.10 Daft Punk - Take a trip into the Daft Punk archive..."
+      },
+      {
+        "description": "Overview This project aims to archive all currently known bootlegs from Daft Punk, Thomas Bangalter, Le Knight Club and Together in their original / highest quality forms. Update Log 29 Oct 2026 - 'Live @ Kiss FM' is added 27 Mar 2026 - 'Live @ Radio Nova' is added 13 Nov 2025 - 'Live @ The Fillmore' is added 23 Jun 2025 - The archive is launched Why? In a world where YouTube uploads and SoundCloud downloaders reign supreme, it is important to ensure that the original variants and versions of each of these bootlegs are archived in an easy-to-access location to avoid inferior versions being passed around, such as the case with the news outlet ElectroBlog who had notoriously distributed low-quality YouTube rips of a handful of Daft Punk bootlegs Note This archive has NOT been put together with the intent for these files to be re-uploaded to streaming platforms, as most (If not all) of these bootlegs are already up on platforms like YouTube, SoundCloud and Mixcloud, and uploading more copies to streaming sites is only harming the archival of these original\u00a0 files, and making it easier for inferior / transcoded rips to be passed around. We have already started seeing 4th generation re-uploads appearing on YouTube \u00a0and being spread on places like SoulSeek , making for a file that has been re-encoded 5 times!!! How? Each bootleg has been meticulously verified and compared against reputable sources to ensure each is the original and / or highest quality file / rip of each set.\u00a0 \u00a0- For older bootlegs that originated from Scene releases and/or P2P sites (I.E. Napster, AudioGalaxy, Limewire etc.) the original (Or closest to original) version has been sourced from Blogs, Torrent Trackers and other distribution sites that hold copies of the recordings from around the time that these were initially distributed online. \u00a0- For those that only originated via streaming sites (I.E. SoundCloud, Mixcloud, YouTube etc.) these have been ripped from their respective original uploads (Not re-uploads) using the adequate tools / methods to extract the highest quality audio stream from each respective site. \u00a0- For those that originally originate from a video recording , the audio of these has been extracted from their respective original videos using tools that avoid the re-encoding of the audio. \u00a0- For those that have known physical releases (Tape, CD etc.) these have been ripped in FLAC and as close to 100% accuracy as possible (Where applicable) Additional Notes A handful of these recordings have been cropped so as to only include the sections that feature Daft Punk's set. This has been done with the aid of FFMPEG, which has allowed these to be cropped in a way that there would be no re-encoding or quality loss. Thanks Thanks to all of those who have assisted in the ripping and hunting process for this archive, your efforts have been extremely appreciated by myself as well as the wider community!",
+        "identifier": "daft-punk-bootleg-archive",
+        "mediatype": "audio",
+        "title": "Daft Punk - Definitve Bootleg Archive (1994 to 2003)"
+      }
+    ]
+  },
+  {
+    "label": "IA SEARCH identifier:(daftpunk)",
+    "status": 200,
+    "url": "https://archive.org/advancedsearch.php?q=identifier%3A%28daftpunk%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=description&fl%5B%5D=mediatype&rows=100&page=1&output=json",
+    "count": 0,
+    "results": []
+  },
+  {
+    "label": "IA SEARCH description:(\"world.swa\")",
+    "status": 200,
+    "url": "https://archive.org/advancedsearch.php?q=description%3A%28%22world.swa%22%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=description&fl%5B%5D=mediatype&rows=100&page=1&output=json",
+    "count": 0,
+    "results": []
+  },
+  {
+    "label": "IA SEARCH description:(\"burnin.swa\")",
+    "status": 200,
+    "url": "https://archive.org/advancedsearch.php?q=description%3A%28%22burnin.swa%22%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=description&fl%5B%5D=mediatype&rows=100&page=1&output=json",
+    "count": 0,
+    "results": []
+  },
+  {
+    "label": "IA SEARCH description:(\"revolution.swa\")",
+    "status": 200,
+    "url": "https://archive.org/advancedsearch.php?q=description%3A%28%22revolution.swa%22%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=description&fl%5B%5D=mediatype&rows=100&page=1&output=json",
+    "count": 0,
+    "results": []
+  },
+  {
+    "label": "IA SEARCH description:(\"disco/swa\")",
+    "status": 200,
+    "url": "https://archive.org/advancedsearch.php?q=description%3A%28%22disco%2Fswa%22%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=description&fl%5B%5D=mediatype&rows=100&page=1&output=json",
+    "count": 0,
+    "results": []
+  },
+  {
+    "label": "IA SEARCH title:(\"1990s\" AND websites)",
+    "status": 200,
+    "url": "https://archive.org/advancedsearch.php?q=title%3A%28%221990s%22+AND+websites%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=description&fl%5B%5D=mediatype&rows=100&page=1&output=json",
+    "count": 1,
+    "results": [
+      {
+        "date": "2016-04-18T00:00:00Z",
+        "description": "The 1990s websites that companies wish they could forget! Old web pages for McDonald's, Pepsi and Apple show just how far technology has come Source: https://www.youtube.com/watch?v=c2BYvjHDIMM Uploader: Sheryl Wajid Upload date: 20160418",
+        "identifier": "youtube-c2BYvjHDIMM",
+        "mediatype": "movies",
+        "title": "The 1990s websites that companies wish they could forget! Old web pages for McDonald's, Pepsi and Ap"
+      }
+    ]
+  },
+  {
+    "label": "IA SEARCH title:(\"Daft Punk\" AND interactive)",
+    "status": 200,
+    "url": "https://archive.org/advancedsearch.php?q=title%3A%28%22Daft+Punk%22+AND+interactive%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=description&fl%5B%5D=mediatype&rows=100&page=1&output=json",
+    "count": 0,
+    "results": []
+  },
+  {
+    "label": "GREP \"world.swa\"",
+    "status": 429,
+    "url": "https://grep.app/api/search?q=%22world.swa%22",
+    "total": null,
+    "hits": []
+  },
+  {
+    "label": "GREP \"burnin.swa\"",
+    "status": 429,
+    "url": "https://grep.app/api/search?q=%22burnin.swa%22",
+    "total": null,
+    "hits": []
+  },
+  {
+    "label": "GREP \"revolution.swa\"",
+    "status": 429,
+    "url": "https://grep.app/api/search?q=%22revolution.swa%22",
+    "total": null,
+    "hits": []
+  },
+  {
+    "label": "GREP \"dafunk.swa\"",
+    "status": 429,
+    "url": "https://grep.app/api/search?q=%22dafunk.swa%22",
+    "total": null,
+    "hits": []
+  },
+  {
+    "label": "GREP \"musique.swa\"",
+    "status": 429,
+    "url": "https://grep.app/api/search?q=%22musique.swa%22",
+    "total": null,
+    "hits": []
+  },
+  {
+    "label": "GREP \"disco/swa/\"",
+    "status": 429,
+    "url": "https://grep.app/api/search?q=%22disco%2Fswa%2F%22",
+    "total": null,
+    "hits": []
+  },
+  {
+    "label": "GREP \"daftpunk.com\" \"menu.dcr\"",
+    "status": 429,
+    "url": "https://grep.app/api/search?q=%22daftpunk.com%22+%22menu.dcr%22",
+    "total": null,
+    "hits": []
+  },
+  {
+    "label": "GREP \"phoenixobot.dcr\"",
+    "status": 429,
+    "url": "https://grep.app/api/search?q=%22phoenixobot.dcr%22",
+    "total": null,
+    "hits": []
+  },
+  {
+    "label": "GREP \"daftpunk.com\" \"1998\"",
+    "status": 429,
+    "url": "https://grep.app/api/search?q=%22daftpunk.com%22+%221998%22",
+    "total": null,
+    "hits": []
+  },
+  {
+    "label": "GREP \"www.daftpunk.com\" \"site\" \"zip\"",
+    "status": 429,
+    "url": "https://grep.app/api/search?q=%22www.daftpunk.com%22+%22site%22+%22zip%22",
+    "total": null,
+    "hits": []
+  },
+  {
+    "label": "IA FULLTEXT daftpunk website",
+    "status": 200,
+    "url": "https://archive.org/services/search/v1/scrape?q=daftpunk.com&count=100",
+    "response": {
+      "items": [
+        {
+          "identifier": "19971998-daftpunk.com-daft-questions"
+        },
+        {
+          "identifier": "thingiverse-4275081"
+        },
+        {
+          "identifier": "youtube-5glDAaCaazc"
+        }
+      ],
+      "count": 3,
+      "total": 3
+    }
+  },
+  {
+    "label": "COMMONCRAWL indexes",
+    "status": 200,
+    "url": "https://index.commoncrawl.org/collinfo.json",
+    "index_count": 129,
+    "oldest": [
+      {
+        "id": "CC-MAIN-2014-41",
+        "name": "September 2014 Index",
+        "timegate": "https://index.commoncrawl.org/CC-MAIN-2014-41/",
+        "cdx-api": "https://index.commoncrawl.org/CC-MAIN-2014-41-index",
+        "from": "2014-09-15T01:58:23",
+        "to": "2014-10-02T18:25:42"
+      },
+      {
+        "id": "CC-MAIN-2014-35",
+        "name": "August 2014 Index",
+        "timegate": "https://index.commoncrawl.org/CC-MAIN-2014-35/",
+        "cdx-api": "https://index.commoncrawl.org/CC-MAIN-2014-35-index",
+        "from": "2014-08-20T04:48:45",
+        "to": "2014-09-03T09:11:02"
+      },
+      {
+        "id": "CC-MAIN-2014-23",
+        "name": "July 2014 Index",
+        "timegate": "https://index.commoncrawl.org/CC-MAIN-2014-23/",
+        "cdx-api": "https://index.commoncrawl.org/CC-MAIN-2014-23-index",
+        "from": "2014-07-09T23:29:26",
+        "to": "2014-08-02T10:28:44"
+      },
+      {
+        "id": "CC-MAIN-2014-15",
+        "name": "April 2014 Index",
+        "timegate": "https://index.commoncrawl.org/CC-MAIN-2014-15/",
+        "cdx-api": "https://index.commoncrawl.org/CC-MAIN-2014-15-index",
+        "from": "2014-04-16T04:08:36",
+        "to": "2014-04-25T10:01:03"
+      },
+      {
+        "id": "CC-MAIN-2014-10",
+        "name": "March 2014 Index",
+        "timegate": "https://index.commoncrawl.org/CC-MAIN-2014-10/",
+        "cdx-api": "https://index.commoncrawl.org/CC-MAIN-2014-10-index",
+        "from": "2014-03-07T03:34:34",
+        "to": "2014-03-17T22:15:18"
+      },
+      {
+        "id": "CC-MAIN-2013-48",
+        "name": "Winter 2013 Index",
+        "timegate": "https://index.commoncrawl.org/CC-MAIN-2013-48/",
+        "cdx-api": "https://index.commoncrawl.org/CC-MAIN-2013-48-index",
+        "from": "2013-12-04T15:19:39",
+        "to": "2013-12-22T13:58:39"
+      },
+      {
+        "id": "CC-MAIN-2013-20",
+        "name": "Summer 2013 Index",
+        "timegate": "https://index.commoncrawl.org/CC-MAIN-2013-20/",
+        "cdx-api": "https://index.commoncrawl.org/CC-MAIN-2013-20-index",
+        "from": "2013-05-18T04:54:09",
+        "to": "2013-06-20T13:36:32"
+      },
+      {
+        "id": "CC-MAIN-2012",
+        "name": "2012 ARC Files Index",
+        "timegate": "https://index.commoncrawl.org/CC-MAIN-2012/",
+        "cdx-api": "https://index.commoncrawl.org/CC-MAIN-2012-index",
+        "from": "2012-01-27T17:41:51",
+        "to": "2012-06-05T06:28:50"
+      },
+      {
+        "id": "CC-MAIN-2009-2010",
+        "name": "2009 - 2010 ARC Files Index",
+        "timegate": "https://index.commoncrawl.org/CC-MAIN-2009-2010/",
+        "cdx-api": "https://index.commoncrawl.org/CC-MAIN-2009-2010-index",
+        "from": "2009-07-02T15:25:48",
+        "to": "2010-09-10T21:44:53"
+      },
+      {
+        "id": "CC-MAIN-2008-2009",
+        "name": "2008 - 2009 ARC Files Index",
+        "timegate": "https://index.commoncrawl.org/CC-MAIN-2008-2009/",
+        "cdx-api": "https://index.commoncrawl.org/CC-MAIN-2008-2009-index",
+        "from": "2008-05-09T05:37:12",
+        "to": "2009-01-09T20:58:29"
+      }
+    ]
+  },
+  {
+    "label": "PROTOSEARCH",
+    "status": 200,
+    "url": "https://protoweb.org/",
+    "response": {
+      "text": "<!DOCTYPE html>\n<html class=\"html\" lang=\"en-US\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<link rel=\"profile\" href=\"https://gmpg.org/xfn/11\">\n\n\t<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<!-- This site is optimized with the Yoast SEO plugin v28.7 - https://yoast.com/product/yoast-seo-wordpress/ -->\n\t<title>Home - Protoweb</title>\n\t<meta name=\"description\" content=\"With ProtoWeb, you can browse the web like it&#039;s 1995!\" />\n\t<link rel=\"canonical\" href=\"https://protoweb.org/\" />\n\t<meta property=\"og:locale\" content=\"en_US\" />\n\t<meta property=\"og:type\" content=\"website\" />\n\t<meta property=\"og:title\" content=\"Home - Protoweb\" />\n\t<meta property=\"og:description\" content=\"With ProtoWeb, you can browse the web like it&#039;s 1995!\" />\n\t<meta property=\"og:url\" content=\"https://protoweb.org/\" />\n\t<meta property=\"og:site_name\" content=\"Protoweb\" />\n\t<meta property=\"article:modified_time\" content=\"2025-11-10T06:33:38+00:00\" />\n\t<meta property=\"og:image\" content=\"https://protoweb.org/wp-content/uploads/2021/02/favicon.jpg\" />\n\t<meta property=\"og:image:width\" content=\"512\" />\n\t<meta property=\"og:image:height\" content=\"512\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" />\n\t<meta name=\"twitter:card\" content=\"summary_large_image\" />\n\t<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/protoweb.org\\/\",\"url\":\"https:\\/\\/protoweb.org\\/\",\"name\":\"Home - Protoweb\",\"isPa"
+    }
+  },
+  {
+    "label": "FLASHPOINT search",
+    "status": 200,
+    "url": "https://flashpointarchive.org/api/search?query=Daft+Punk+Website",
+    "response": {
+      "total": 1,
+      "pages": 1,
+      "page": 1,
+      "games": [
+        {
+          "id": "1dadf50d-0fe9-4e29-a7ec-12690cc51747",
+          "title": "Daft Punk Website",
+          "alternateTitles": "",
+          "series": "",
+          "developer": "DaftTrax",
+          "publisher": "",
+          "primaryPlatform": "Shockwave",
+          "platforms": [
+            "Shockwave"
+          ],
+          "library": "arcade",
+          "tags": [
+            "Microsite",
+            "Music"
+          ],
+          "playMode": "Single Player",
+          "status": "Partial; Playable",
+          "notes": "All .swf and .swa files are lost.",
+          "source": "https://web.archive.org/web/19990429061918/http://www.daftpunk.com/",
+          "releaseDate": "1997",
+          "version": "",
+          "originalDescription": "",
+          "language": "en",
+          "ruffleSupport": "",
+          "dateAdded": "2025-02-08T01:27:12.425972Z",
+          "dateModified": "2026-05-19T07:30:02.995999Z",
+          "legacyApplicationPath": "FPSoftware\\fpnavigator-portable\\FPNavigator.exe",
+          "legacyLaunchCommand": "http://www.daftpunk.com/",
+          "logoPath": "Logos/1d/ad/1dadf50d-0fe9-4e29-a7ec-12690cc51747.png",
+          "screenshotPath": "Screenshots/1d/ad/1dadf50d-0fe9-4e29-a7ec-12690cc51747.png",
+          "gameData": [
+            {
+              "dateAdded": "2025-02-08T01:27:12.425972Z",
+              "size": 781925,
+              "sha256": "85bf17d70190562b6013eaab97c72249609a3124feb6cf3ded7d49d57c4ced10",
+              "crc32": 0,
+              "applicationPath": "FPSoftware\\fpnavigator-portable\\FPNavigator.exe",
+              "launchCommand": "http://www.daftpunk.com/"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

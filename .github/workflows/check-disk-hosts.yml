@@ -14,6 +14,8 @@ jobs:
         run: |
           for url in \
             'https://nuschuz.github.io/daft-punk-homework/daft-punk-toy.img' \
+            'https://raw.githubusercontent.com/NuSchuz/daft-punk-homework/main/assets/daft-punk-toy.img' \
+            'https://cdn.jsdelivr.net/gh/NuSchuz/daft-punk-homework@main/assets/daft-punk-toy.img' \
             'https://raw.githubusercontent.com/NuSchuz/daft-punk-homework/main/DAFT_PUNK_SITE_UPLOAD.zip' \
             'https://cdn.jsdelivr.net/gh/NuSchuz/daft-punk-homework@main/DAFT_PUNK_SITE_UPLOAD.zip' \
             'https://github.com/NuSchuz/daft-punk-homework/raw/refs/heads/main/DAFT_PUNK_SITE_UPLOAD.zip'
@@ -24,3 +26,19 @@ jobs:
             curl -sSL --max-time 25 --range 0-1023 --max-filesize 8192 -D /tmp/headers --output /dev/null "$url" || true
             grep -iE '^(HTTP/|content-length:|accept-ranges:|content-range:|access-control-allow-origin:)' /tmp/headers || true
           done
+
+      - name: Check actual Infinite Mac server-side CD-ROM metadata endpoint
+        run: |
+          python3 - <<'PY'
+          import base64, subprocess
+          urls=[
+            'https://nuschuz.github.io/daft-punk-homework/daft-punk-toy.img',
+            'https://raw.githubusercontent.com/NuSchuz/daft-punk-homework/main/assets/daft-punk-toy.img',
+            'https://cdn.jsdelivr.net/gh/NuSchuz/daft-punk-homework@main/assets/daft-punk-toy.img'
+          ]
+          for url in urls:
+            enc=base64.b64encode(url.encode()).decode()
+            endpoint='https://infinitemac.org/CD-ROM/'+enc
+            print("URL:",url,flush=True)
+            subprocess.run(['curl','-si','--max-time','25','-X','PUT',endpoint],check=False)
+          PY

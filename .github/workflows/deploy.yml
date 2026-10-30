@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -58,6 +58,17 @@ jobs:
           cp overrides/toy-mac.html public/toy-mac.html
           test -s public/daft-punk-toy.img
           echo "Embedded 1998 Macintosh toy disk: $(du -h public/daft-punk-toy.img)"
+
+      - name: Publish archival disk to repository for alternate CDN delivery
+        run: |
+          set -euo pipefail
+          mkdir -p assets
+          cp public/daft-punk-toy.img assets/daft-punk-toy.img
+          git add assets/daft-punk-toy.img
+          if ! git diff --cached --quiet; then
+            git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Preserve built Macintosh toy disk for alternate CDN hosting [skip ci]"
+            git push origin HEAD:main
+          fi
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5

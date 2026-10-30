@@ -1,0 +1,407 @@
+{
+  "checked": 77,
+  "queries": [
+    {
+      "name": "ia-www-main",
+      "code": 200,
+      "data": "[]\n",
+      "truncated": false
+    },
+    {
+      "name": "ia-www-disco",
+      "code": 200,
+      "data": "[]\n",
+      "truncated": false
+    },
+    {
+      "name": "ia-apex-main",
+      "code": 200,
+      "data": "[]\n",
+      "truncated": false
+    },
+    {
+      "name": "ia-apex-disco",
+      "code": 200,
+      "data": "[]\n",
+      "truncated": false
+    },
+    {
+      "name": "arquivo-www-main",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "arquivo-www-disco",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "arquivo-apex-main",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "arquivo-apex-disco",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-www-swa/world.swa",
+      "code": 200,
+      "data": "[]\n",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-apex-swa/world.swa",
+      "code": 200,
+      "data": "[]\n",
+      "truncated": false
+    },
+    {
+      "name": "arquivo-exact-swa/world.swa",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-www-swa/burnin.swa",
+      "code": 200,
+      "data": "[]\n",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-apex-swa/burnin.swa",
+      "code": 200,
+      "data": "[]\n",
+      "truncated": false
+    },
+    {
+      "name": "arquivo-exact-swa/burnin.swa",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-www-swa/revolution.swa",
+      "code": 200,
+      "data": "[]\n",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-apex-swa/revolution.swa",
+      "code": 200,
+      "data": "[]\n",
+      "truncated": false
+    },
+    {
+      "name": "arquivo-exact-swa/revolution.swa",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-www-swa/dafunk.swa",
+      "code": 200,
+      "data": "[]\n",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-apex-swa/dafunk.swa",
+      "code": 200,
+      "data": "[]\n",
+      "truncated": false
+    },
+    {
+      "name": "arquivo-exact-swa/dafunk.swa",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-www-swa/musique.swa",
+      "code": 200,
+      "data": "[]\n",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-apex-swa/musique.swa",
+      "code": 200,
+      "data": "[]\n",
+      "truncated": false
+    },
+    {
+      "name": "arquivo-exact-swa/musique.swa",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-www-swa/6.swa",
+      "code": 200,
+      "data": "[]\n",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-apex-swa/6.swa",
+      "code": 200,
+      "data": "[]\n",
+      "truncated": false
+    },
+    {
+      "name": "arquivo-exact-swa/6.swa",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-www-swa/9.swa",
+      "code": 200,
+      "data": "[]\n",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-apex-swa/9.swa",
+      "code": 200,
+      "data": "[]\n",
+      "truncated": false
+    },
+    {
+      "name": "arquivo-exact-swa/9.swa",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-www-disco/swa/1.swa",
+      "code": 200,
+      "data": "[]\n",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-apex-disco/swa/1.swa",
+      "code": 200,
+      "data": "[]\n",
+      "truncated": false
+    },
+    {
+      "name": "arquivo-exact-disco/swa/1.swa",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-www-disco/swa/2.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "ia-exact-apex-disco/swa/2.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "arquivo-exact-disco/swa/2.swa",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-www-disco/swa/3.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "ia-exact-apex-disco/swa/3.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "arquivo-exact-disco/swa/3.swa",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-www-disco/swa/4.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "ia-exact-apex-disco/swa/4.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "arquivo-exact-disco/swa/4.swa",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-www-disco/swa/5.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "ia-exact-apex-disco/swa/5.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "arquivo-exact-disco/swa/5.swa",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-www-disco/swa/6.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "ia-exact-apex-disco/swa/6.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "arquivo-exact-disco/swa/6.swa",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-www-disco/swa/7.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "ia-exact-apex-disco/swa/7.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "arquivo-exact-disco/swa/7.swa",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-www-disco/swa/8.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "ia-exact-apex-disco/swa/8.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "arquivo-exact-disco/swa/8.swa",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-www-disco/swa/9.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "ia-exact-apex-disco/swa/9.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "arquivo-exact-disco/swa/9.swa",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-www-disco/swa/10.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "ia-exact-apex-disco/swa/10.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "arquivo-exact-disco/swa/10.swa",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-www-disco/swa/11.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "ia-exact-apex-disco/swa/11.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "arquivo-exact-disco/swa/11.swa",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-www-disco/swa/12.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "ia-exact-apex-disco/swa/12.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "arquivo-exact-disco/swa/12.swa",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-www-disco/swa/13.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "ia-exact-apex-disco/swa/13.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "arquivo-exact-disco/swa/13.swa",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-www-disco/swa/14.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "ia-exact-apex-disco/swa/14.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "arquivo-exact-disco/swa/14.swa",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-www-disco/swa/15.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "ia-exact-apex-disco/swa/15.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "arquivo-exact-disco/swa/15.swa",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    },
+    {
+      "name": "ia-exact-www-disco/swa/16.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "ia-exact-apex-disco/swa/16.swa",
+      "error": "URLError: <urlopen error [Errno 111] Connection refused>"
+    },
+    {
+      "name": "arquivo-exact-disco/swa/16.swa",
+      "code": 200,
+      "data": "",
+      "truncated": false
+    }
+  ]
+}

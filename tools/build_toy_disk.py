@@ -95,16 +95,9 @@ with tempfile.TemporaryDirectory() as temp:
     decode_binhex(source,sit)
     run("unar","-quiet","-forks","visible","-output-directory",scratch/"expanded",sit)
     def app_files():
-        return [p for p in scratch.rglob("*") if p.is_file() and p.name.lower()=="phoenixobot.dcr"]
-    print("After first extraction:",[(str(p.relative_to(scratch)),p.stat().st_size) for p in scratch.rglob("*") if p.is_file()][:30],flush=True)
+        return [p for p in scratch.rglob("*") if p.is_file() and p.name=="phoenix"]
     candidates=app_files()
-    if not candidates:
-        sit_files=[p for p in scratch.rglob("*") if p.is_file() and p.suffix.lower()==".sit"]
-        for p in sit_files:
-            run("unar","-quiet","-forks","visible","-output-directory",scratch/"expanded",p)
-        print("After StuffIt extraction:",[(str(p.relative_to(scratch)),p.stat().st_size) for p in scratch.rglob("*") if p.is_file()][:30],flush=True)
-        candidates=app_files()
-    if not candidates:raise SystemExit("Original phoenixobot.dcr not found after extraction")
+    if not candidates:raise SystemExit("Original phoenix not found after extraction")
     app=candidates[0]
     companion=app.with_name("._"+app.name)
     if not companion.exists():companion=app.with_name(app.name+".rsrc")
@@ -122,7 +115,7 @@ with tempfile.TemporaryDirectory() as temp:
     try:
         run("hcopy","-m",mb,":")
         readme=scratch/"READ ME.txt"
-        readme.write_bytes(b"DAFT PUNK SEQUENCER TOY\r\rDouble-click phoenixobot.dcr to start.\rOriginal 1998 Macintosh application.\r")
+        readme.write_bytes(b"DAFT PUNK SEQUENCER TOY\r\rDouble-click phoenix to start.\rOriginal 1998 Macintosh application.\r")
         run("hcopy","-r",readme,":READ ME")
         run("hls","-l")
     finally:

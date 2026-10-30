@@ -40,3 +40,29 @@ Internet searches for the filenames `world.swa`, `burnin.swa`, `revolution.swa`,
 - **Flashpoint Discord / web-cache channel**: https://flashpointarchive.org/datahub/Recovering_Files_from_Browser_Cache . Official guide describes recovering original assets from old Netscape/Internet Explorer caches. Historical caches or private full-site backups now look more promising than further conventional Wayback indexing.
 
 **Next concrete action:** make a narrowly targeted request to these collectors for full `daftpunk.com` site mirrors or local browser caches dated 1997–2001, specifically the 23 SWA paths. Do not describe substitute recordings as recovered originals. No external parties have yet been contacted.
+
+
+## Expanded search: public catalogs, manifests and alternate hostnames (October 30, 2026)
+
+An additional 28 cross-domain archive queries examined www/non-www daftpunk.net, daft-punk.com, ftp.daftpunk.com, port-80 variants, and period fan sites uuuu.org and daftcrew.com, for the relative sound directories. None produced an indexed `.swa` match. These queries only searched the specified directories; mirrors could have stored files in differently named paths.
+
+A separate public-catalog search queried the Internet Archive Advanced Search and scraping API for related website backups, title and description variants, and the distinctive SWA filenames. None of the plausible archive-item listings proved to contain a binary website backup. `grep.app` returned HTTP 429 for all ten attempted filename/code searches, so these are *inconclusive*, not negative evidence. GitHub indexed searches for distinctive original-site paths produced no matches.
+
+**New item discovered:** https://archive.org/details/19971998-daftpunk.com-daft-questions (`19971998-daftpunk.com-daft-questions`). Its manifest was downloaded and inspected. It contains a 2026 QuickTime screen recording of a 1997–1998 Daft Punk self-interview and video derivatives, but no `swa` file, DCR movie, or website ZIP. Machine-readable manifest: `internet_archive_daftpunk_find.json`.
+
+Internet Archive general-purpose index results are stored in `deep_mirror_hunt.json`. Alternate-domain raw results are in `cross_domain_audio_results.json`.
+
+**Protoweb:** project maintains a large curated set of restored 1990s websites and a Wayback proxy, but the public list of restored sites does not include daftpunk.com. Its project documentation says the server-side archives are not generally provided as downloadable collections. No proprietary Protoweb holdings were directly inspected; this avenue requires a curator response.
+
+### Evidence summary
+- Original SWA audio files recovered: 0 of 23.
+- Checked independently preserved Flashpoint package: 0 SWA (although some DCR/SWF material survives).
+- Confirmed Wayback and Arquivo.pt captures under the exact original and alternate domain audio paths: 0.
+- Additional physical archives, CD-ROM collections and private browser caches are not publicly searchable in aggregate; absence from these sources **cannot** be established.
+
+### Most promising remaining contacts
+1. The Daft Punk Historian (preserves official website history; may know original website developer or old fan collectors): https://thedaftpunkhistorian.weebly.com/article--interview-database.html
+2. Flashpoint web-cache preservation group: https://flashpointarchive.org/datahub/Recovering_Files_from_Browser_Cache
+3. Protoweb restoration curators: https://protoweb.org/.
+
+The practical next step is human outreach requesting any 1997–2001 full-site backups or Netscape/Internet Explorer caches. It would be inaccurate to claim exhaustive coverage of all privately held data.

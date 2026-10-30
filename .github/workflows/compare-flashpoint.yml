@@ -1,0 +1,50 @@
+name: Compare Flashpoint's preserved Daft Punk site package
+on:
+  push:
+    paths: ['.github/workflows/compare-flashpoint.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download and inspect source-preserved site archive
+        run: |
+          python3 - <<'PY'
+          import datetime,urllib.request,zipfile,io,json,pathlib
+          gid='1dadf50d-0fe9-4e29-a7ec-12690cc51747'
+          dt=datetime.datetime.fromisoformat('2025-02-08T01:27:12.425+00:00')
+          stamp=int(dt.timestamp()*1000)
+          urls=[
+            f'https://download.unstable.life/gib-roms/Games/{gid}-{stamp}.zip',
+            f'https://download.flashpointarchive.org/gib-roms/Games/{gid}-{stamp}.zip',
+            f'https://db-api.unstable.life/get?id={gid}'
+          ]
+          out={'game_id':gid,'tested':[]}
+          for u in urls:
+            try:
+              req=urllib.request.Request(u,headers={'User-Agent':'Mozilla/5.0 (historical preservation)'})
+              with urllib.request.urlopen(req,timeout=22) as r:
+                blob=r.read(3000000)
+                item={'url':u,'status':r.status,'size':len(blob),'type':r.headers.get('Content-Type')}
+                if zipfile.is_zipfile(io.BytesIO(blob)):
+                  z=zipfile.ZipFile(io.BytesIO(blob))
+                  item['files']=[{'name':f.filename,'size':f.file_size,'crc32':format(f.CRC,'08x')} for f in z.infolist()]
+                else:item['head']=blob[:500].decode('utf-8','replace')
+                out['tested'].append(item)
+                print(json.dumps(item)[:7000])
+                if 'files' in item:break
+            except Exception as e:out['tested'].append({'url':u,'error':str(e)[:300]})
+          pathlib.Path('flashpoint_package_audit.json').write_text(json.dumps(out,indent=2))
+          PY
+      - name: Commit inventory
+        if: always()
+        run: |
+          test -s flashpoint_package_audit.json || exit 0
+          git add flashpoint_package_audit.json
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Inventory Flashpoint version of Daft Punk 1999 site [skip ci]'
+          git pull --rebase origin main
+          git push origin HEAD:main

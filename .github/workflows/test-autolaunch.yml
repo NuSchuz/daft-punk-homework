@@ -22,12 +22,12 @@ jobs:
             const page=await b.newPage({viewport:{width:800,height:600}});
             const url='https://infinitemac.org/embed?'+new URLSearchParams({disk:'Mac OS 8.1',machine:'Power Macintosh 9500',infinite_hd:'false',saved_hd:'false',library:'false',disk_url:'https://raw.githubusercontent.com/NuSchuz/daft-punk-homework/main/assets/daft-punk-toy.img',screenSize:'640x480'});
             page.on('console',m=>{if(m.type()==='error')console.log('ERROR',m.text().slice(0,400))});
-            await page.goto(url,{waitUntil:'domcontentloaded',timeout:30000});
-            function post(data){return page.evaluate(d=>window.postMessage(d,'*'),data)}
+            await page.goto('about:blank');
+            await page.setContent('<iframe id="mac" allow="cross-origin-isolated; autoplay" src="'+url.replace(/&/g,'&amp;')+'" width="640" height="480" style="border:0"></iframe>');
+            
             await page.waitForTimeout(19000);
             await page.screenshot({path:'debug/auto/before.png'});
-            const frame=page.frameLocator('iframe');
-            const send=async d=>page.evaluate(d=>{window.postMessage(d,'*')},d);
+            const send=async d=>page.evaluate(d=>document.querySelector('#mac').contentWindow.postMessage(d,'https://infinitemac.org'),d);
             // Infinite Mac embed sends messages to its own window via postMessage
             await send({type:'emulator_mouse_move',x:515,y:110});
             await send({type:'emulator_mouse_down',button:0});

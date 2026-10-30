@@ -1,0 +1,50 @@
+name: Final cross-domain SWA archival checks
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/cross-domain-audio.yml']
+permissions:
+  contents: write
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - name: Query alternate hosts and early fan-site archives
+        run: |
+          python3 - <<'PY'
+          import requests,urllib.parse,json,concurrent.futures
+          from pathlib import Path
+          jobs=[]
+          hosts=['daftpunk.net','www.daftpunk.net','www.daft-punk.com','daft-punk.com','www.daftpunk.com:80','ftp.daftpunk.com','uuuu.org','www.uuuu.org','daftcrew.com','www.daftcrew.com']
+          paths=['swa/*','disco/swa/*','*daftpunk*.swa','*swa*']
+          for host in hosts:
+            for path in paths[:2]:
+              q={'url':host+'/'+path,'output':'json','from':'1996','to':'2008','limit':100}
+              jobs.append(('Wayback '+host+'/'+path,'https://web.archive.org/cdx/search/cdx',q))
+          # Also search archival indexes for resources, even when original domain is gone.
+          for host in ['www.daftpunk.com','daftpunk.com','www.daftpunk.net','daftpunk.net']:
+            for path in ['swa/*','disco/swa/*']:
+              jobs.append(('Arquivo '+host+'/'+path,'https://arquivo.pt/wayback/cdx',{'url':host+'/'+path,'output':'json','from':'1996','to':'2008'}))
+          def get(x):
+            name,url,params=x
+            try:
+              r=requests.get(url,params=params,timeout=23,headers={'User-Agent':'Mozilla/5.0'})
+              s=r.text[:40000]
+              print(name,r.status_code,repr(s[:120]),flush=True)
+              return {'name':name,'status':r.status_code,'data':s}
+            except Exception as e:
+              print(name,'ERR',str(e)[:120],flush=True)
+              return {'name':name,'error':str(e)[:250]}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:out=list(pool.map(get,jobs))
+          Path('cross_domain_audio_results.json').write_text(json.dumps(out,indent=2))
+          PY
+      - name: Save results
+        if: always()
+        run: |
+          test -s cross_domain_audio_results.json || exit 0
+          git add cross_domain_audio_results.json
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Preserve SWA alternate-domain archive search [skip ci]'
+          git pull --rebase origin main
+          git push origin HEAD:main

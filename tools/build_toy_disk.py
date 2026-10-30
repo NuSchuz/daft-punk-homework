@@ -47,7 +47,7 @@ def as_macbinary(name,data,rsrc,kind,creator):
 
 def decode_binhex(source,destination):
     # BinHex 4.0: six-bit alphabet, run-length encoding, Mac file header.
-    alphabet=b'!"#$%&\\'()*+,-012345689@ABCDEFGHIJKLMNPQRSTUVXYZ[`abcdefhijklmpqr'
+    alphabet=("!"+chr(34)+"#$%&'()*+,-012345689@ABCDEFGHIJKLMNPQRSTUVXYZ[`abcdefhijklmpqr").encode("ascii")
     lookup={x:i for i,x in enumerate(alphabet)}
     raw=source.read_bytes()
     start=raw.find(b':')
@@ -57,7 +57,7 @@ def decode_binhex(source,destination):
     nbits=0
     packed=bytearray()
     for byte in raw[start+1:end]:
-        if byte in b' \\r\\n\\t':continue
+        if byte in (32,10,13,9):continue
         if byte not in lookup:raise ValueError("Invalid BinHex alphabet")
         bits=(bits<<6)|lookup[byte]
         nbits+=6

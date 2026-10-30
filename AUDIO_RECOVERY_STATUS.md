@@ -66,3 +66,16 @@ Internet Archive general-purpose index results are stored in `deep_mirror_hunt.j
 3. Protoweb restoration curators: https://protoweb.org/.
 
 The practical next step is human outreach requesting any 1997–2001 full-site backups or Netscape/Internet Explorer caches. It would be inaccurate to claim exhaustive coverage of all privately held data.
+## Final public-internet discovery sweep (October 30, 2026)
+
+Additional Internet Archive Advanced Search, scrape index and item metadata checks located no original site ZIP or SWA media. Item `19971998-daftpunk.com-daft-questions` was checked against its complete manifest: only a 2026 video screen recording and derivatives, no web assets.
+
+Public file-index checks: GitHub code search produced no matches for original asset paths, grep.app returned HTTP 429 (inconclusive), conventional exact-filename searches yielded no binary links, and Flashpoint's current game package includes no original SWAs.
+
+The 28-query alternate-domain and old fan-site directory check returned no indexed SWA files. See `cross_domain_audio_results.json`. The Internet Archive item catalog and code index audit is recorded in `deep_mirror_hunt.json`.
+
+Public Protoweb site list omits the Daft Punk site. Its private restoration server's contents were not accessible as a published inventory.
+
+**Historical source attribution caution:** Flashpoint lists DaftTrax as a developer, but contemporary 2001 reporting identifies Daft Trax as the band's music/management organization and Daft Life as its multimedia arm. That credit does not by itself identify the original web developer. (The Guardian, March 13, 2001: https://www.theguardian.com/culture/2001/mar/13/artsfeatures.musicindustry)
+
+**Result: 0 of 23 SWA originals recovered from publicly indexed resources.** Private hard drives, unindexed WARC captures, legacy browser caches, promotional media and company backups cannot be exhaustively ruled out.

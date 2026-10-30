@@ -1,0 +1,508 @@
+{
+  "game_id": "1dadf50d-0fe9-4e29-a7ec-12690cc51747",
+  "tested": [
+    {
+      "url": "https://download.unstable.life/gib-roms/Games/1dadf50d-0fe9-4e29-a7ec-12690cc51747-1738978032425.zip",
+      "status": 200,
+      "size": 781925,
+      "type": "application/zip",
+      "files": [
+        {
+          "name": "content.json",
+          "size": 79,
+          "crc32": "4038e8aa"
+        },
+        {
+          "name": "content/www.daftpunk.com/1.html",
+          "size": 2404,
+          "crc32": "54aed067"
+        },
+        {
+          "name": "content/www.daftpunk.com/10.html",
+          "size": 2403,
+          "crc32": "efe03707"
+        },
+        {
+          "name": "content/www.daftpunk.com/2.html",
+          "size": 2402,
+          "crc32": "ae364a56"
+        },
+        {
+          "name": "content/www.daftpunk.com/3.html",
+          "size": 1585,
+          "crc32": "c0fe38ea"
+        },
+        {
+          "name": "content/www.daftpunk.com/4.html",
+          "size": 2316,
+          "crc32": "109aaee1"
+        },
+        {
+          "name": "content/www.daftpunk.com/5.html",
+          "size": 2401,
+          "crc32": "d655bfb9"
+        },
+        {
+          "name": "content/www.daftpunk.com/6.html",
+          "size": 2395,
+          "crc32": "3cff2d40"
+        },
+        {
+          "name": "content/www.daftpunk.com/8.html",
+          "size": 1603,
+          "crc32": "2ed8b899"
+        },
+        {
+          "name": "content/www.daftpunk.com/9.html",
+          "size": 2404,
+          "crc32": "caf04263"
+        },
+        {
+          "name": "content/www.daftpunk.com/burngame.dcr",
+          "size": 81311,
+          "crc32": "a40cf6d5"
+        },
+        {
+          "name": "content/www.daftpunk.com/burnin.html",
+          "size": 1179,
+          "crc32": "58f37626"
+        },
+        {
+          "name": "content/www.daftpunk.com/cgi-bin/www.daftpunk.net/DVD.jpg",
+          "size": 1814,
+          "crc32": "f313fd67"
+        },
+        {
+          "name": "content/www.daftpunk.com/cgi-bin/www.daftpunk.net/tour.cgi",
+          "size": 1748,
+          "crc32": "f4cb2a1d"
+        },
+        {
+          "name": "content/www.daftpunk.com/charles1.html",
+          "size": 908,
+          "crc32": "1cbd4774"
+        },
+        {
+          "name": "content/www.daftpunk.com/charles2.html",
+          "size": 1307,
+          "crc32": "bf45676f"
+        },
+        {
+          "name": "content/www.daftpunk.com/charles2.swf",
+          "size": 34733,
+          "crc32": "284a5461"
+        },
+        {
+          "name": "content/www.daftpunk.com/cop.dcr",
+          "size": 51355,
+          "crc32": "89bd2cd1"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/1.html",
+          "size": 8554,
+          "crc32": "d2707e3a"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/10.html",
+          "size": 8549,
+          "crc32": "edaa8ea0"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/11.html",
+          "size": 8594,
+          "crc32": "1e61e9eb"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/12.html",
+          "size": 8538,
+          "crc32": "b3ef9909"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/13.html",
+          "size": 8510,
+          "crc32": "c0c56864"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/14.html",
+          "size": 8488,
+          "crc32": "4df8fd16"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/15.html",
+          "size": 8488,
+          "crc32": "425dfc7b"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/16.html",
+          "size": 8467,
+          "crc32": "99079eb0"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/2.html",
+          "size": 8493,
+          "crc32": "8d853cda"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/3.html",
+          "size": 8512,
+          "crc32": "ec82a188"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/4.html",
+          "size": 8548,
+          "crc32": "6df0e9b5"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/5.html",
+          "size": 8488,
+          "crc32": "2a0eb0ac"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/6.html",
+          "size": 8614,
+          "crc32": "e796a6a6"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/7.html",
+          "size": 8630,
+          "crc32": "84f8e917"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/8.html",
+          "size": 8498,
+          "crc32": "e18615a1"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/9.html",
+          "size": 8562,
+          "crc32": "d020d553"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/gif/1.gif",
+          "size": 4371,
+          "crc32": "66564bbd"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/gif/10.gif",
+          "size": 3756,
+          "crc32": "ecfd4520"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/gif/11.gif",
+          "size": 4834,
+          "crc32": "16521107"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/gif/12.gif",
+          "size": 4657,
+          "crc32": "58c266cf"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/gif/13.gif",
+          "size": 4697,
+          "crc32": "bc7ac4bc"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/gif/14.gif",
+          "size": 4772,
+          "crc32": "83245595"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/gif/15.gif",
+          "size": 3739,
+          "crc32": "5ccc4798"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/gif/16.gif",
+          "size": 4879,
+          "crc32": "6bc8b7ce"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/gif/2.gif",
+          "size": 4332,
+          "crc32": "b884b2d5"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/gif/3.gif",
+          "size": 2957,
+          "crc32": "deea7142"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/gif/4.gif",
+          "size": 4879,
+          "crc32": "cbe85bc6"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/gif/5.gif",
+          "size": 4615,
+          "crc32": "99823a91"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/gif/6.gif",
+          "size": 8399,
+          "crc32": "fcc6cd88"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/gif/7.gif",
+          "size": 4953,
+          "crc32": "f0f19a9f"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/gif/8.gif",
+          "size": 3528,
+          "crc32": "df262dc5"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/gif/9.gif",
+          "size": 4601,
+          "crc32": "77751b15"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/shockhtml.dcr",
+          "size": 5039,
+          "crc32": "5fecfccd"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/titles/1.gif",
+          "size": 5408,
+          "crc32": "9a940108"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/titles/10.gif",
+          "size": 4574,
+          "crc32": "d20397df"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/titles/11.gif",
+          "size": 5705,
+          "crc32": "85faa06b"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/titles/12.gif",
+          "size": 5693,
+          "crc32": "7639528b"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/titles/13.gif",
+          "size": 5572,
+          "crc32": "e4c5f28d"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/titles/14.gif",
+          "size": 6024,
+          "crc32": "90ad735d"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/titles/15.gif",
+          "size": 4298,
+          "crc32": "5d8fc4d4"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/titles/16.gif",
+          "size": 5735,
+          "crc32": "41eef7a9"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/titles/2.gif",
+          "size": 5658,
+          "crc32": "ea3b12c5"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/titles/3.gif",
+          "size": 3782,
+          "crc32": "ba01ce89"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/titles/4.gif",
+          "size": 5719,
+          "crc32": "845e0061"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/titles/5.gif",
+          "size": 5449,
+          "crc32": "ea83d5b6"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/titles/6.gif",
+          "size": 4659,
+          "crc32": "cc5e51b4"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/titles/7.gif",
+          "size": 6196,
+          "crc32": "64e0b120"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/titles/8.gif",
+          "size": 4888,
+          "crc32": "651d1c9c"
+        },
+        {
+          "name": "content/www.daftpunk.com/disco/titles/9.gif",
+          "size": 4601,
+          "crc32": "bec35b47"
+        },
+        {
+          "name": "content/www.daftpunk.com/home.html",
+          "size": 1010,
+          "crc32": "5d211adb"
+        },
+        {
+          "name": "content/www.daftpunk.com/images/get_shockwave.gif",
+          "size": 1051,
+          "crc32": "80bcff95"
+        },
+        {
+          "name": "content/www.daftpunk.com/images/homework.jpg",
+          "size": 47327,
+          "crc32": "23ea33b9"
+        },
+        {
+          "name": "content/www.daftpunk.com/images/invisi.gif",
+          "size": 49,
+          "crc32": "3ab5cb22"
+        },
+        {
+          "name": "content/www.daftpunk.com/images/lightsnav.gif",
+          "size": 2262,
+          "crc32": "7b49851a"
+        },
+        {
+          "name": "content/www.daftpunk.com/images/nav.gif",
+          "size": 1425,
+          "crc32": "39d81eb7"
+        },
+        {
+          "name": "content/www.daftpunk.com/images/patch.gif",
+          "size": 39399,
+          "crc32": "5a42c1e4"
+        },
+        {
+          "name": "content/www.daftpunk.com/index.html",
+          "size": 532,
+          "crc32": "b264ebed"
+        },
+        {
+          "name": "content/www.daftpunk.com/index0.html",
+          "size": 751,
+          "crc32": "24e4e3c5"
+        },
+        {
+          "name": "content/www.daftpunk.com/index1.html",
+          "size": 754,
+          "crc32": "cb4d1903"
+        },
+        {
+          "name": "content/www.daftpunk.com/index2.html",
+          "size": 753,
+          "crc32": "f64e6676"
+        },
+        {
+          "name": "content/www.daftpunk.com/index3.html",
+          "size": 720,
+          "crc32": "43ffdd5d"
+        },
+        {
+          "name": "content/www.daftpunk.com/index4.html",
+          "size": 743,
+          "crc32": "1d0c97dc"
+        },
+        {
+          "name": "content/www.daftpunk.com/index5.html",
+          "size": 344,
+          "crc32": "a13509aa"
+        },
+        {
+          "name": "content/www.daftpunk.com/indexrec.html",
+          "size": 348,
+          "crc32": "95c42772"
+        },
+        {
+          "name": "content/www.daftpunk.com/map.html",
+          "size": 2611,
+          "crc32": "46a499df"
+        },
+        {
+          "name": "content/www.daftpunk.com/menu.dcr",
+          "size": 92004,
+          "crc32": "a0823441"
+        },
+        {
+          "name": "content/www.daftpunk.com/menu.html",
+          "size": 2146,
+          "crc32": "44975a93"
+        },
+        {
+          "name": "content/www.daftpunk.com/mummy.dcr",
+          "size": 62522,
+          "crc32": "710e52e2"
+        },
+        {
+          "name": "content/www.daftpunk.com/mummy.html",
+          "size": 2124,
+          "crc32": "aabddcdc"
+        },
+        {
+          "name": "content/www.daftpunk.com/quandas.html",
+          "size": 483,
+          "crc32": "42cf33bc"
+        },
+        {
+          "name": "content/www.daftpunk.com/question.dcr",
+          "size": 32815,
+          "crc32": "d4f4198f"
+        },
+        {
+          "name": "content/www.daftpunk.com/rcBnnr.html",
+          "size": 1012,
+          "crc32": "14a998ff"
+        },
+        {
+          "name": "content/www.daftpunk.com/recipe1.html",
+          "size": 1053,
+          "crc32": "074830c4"
+        },
+        {
+          "name": "content/www.daftpunk.com/robots.dcr",
+          "size": 82399,
+          "crc32": "dc41e44a"
+        },
+        {
+          "name": "content/www.daftpunk.com/robots.html",
+          "size": 479,
+          "crc32": "0b4215c7"
+        },
+        {
+          "name": "content/www.daftpunk.com/skeletor.html",
+          "size": 473,
+          "crc32": "cc400396"
+        },
+        {
+          "name": "content/www.daftpunk.com/skeletorlarge.dcr",
+          "size": 57461,
+          "crc32": "ed01a44c"
+        },
+        {
+          "name": "content/www.daftpunk.com/tour.html",
+          "size": 1747,
+          "crc32": "10f53c3a"
+        },
+        {
+          "name": "content/www.daftpunk.com/toy.html",
+          "size": 424,
+          "crc32": "932217f5"
+        },
+        {
+          "name": "content/www.daftpunk.com/tracks.html",
+          "size": 1034,
+          "crc32": "bf9d1df9"
+        },
+        {
+          "name": "content/www.daftpunk.com/wallsound.dcr",
+          "size": 8589,
+          "crc32": "a1018571"
+        }
+      ]
+    }
+  ]
+}

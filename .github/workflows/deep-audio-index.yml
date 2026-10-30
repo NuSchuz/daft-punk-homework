@@ -1,0 +1,61 @@
+name: Deep historical Daft Punk audio capture inventory
+on:
+  push:
+    paths: ['.github/workflows/deep-audio-index.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+      - name: Query sound directories and exact assets across archives
+        run: |
+          cat > /tmp/mine_audio.py <<'PY'
+          import concurrent.futures, urllib.request, urllib.parse, json, time, os, re
+          from pathlib import Path
+          names=['world','burnin','revolution','dafunk','musique','6','9']
+          paths=[f'swa/{n}.swa' for n in names]+[f'disco/swa/{n}.swa' for n in range(1,17)]
+          prefix=[
+            ('ia-www-main','https://web.archive.org/cdx/search/cdx?'+urllib.parse.urlencode({'url':'www.daftpunk.com/swa/*','output':'json','from':'1997','to':'2010','filter':'statuscode:200','collapse':'urlkey','limit':'500'})),
+            ('ia-www-disco','https://web.archive.org/cdx/search/cdx?'+urllib.parse.urlencode({'url':'www.daftpunk.com/disco/swa/*','output':'json','from':'1997','to':'2010','filter':'statuscode:200','collapse':'urlkey','limit':'500'})),
+            ('ia-apex-main','https://web.archive.org/cdx/search/cdx?'+urllib.parse.urlencode({'url':'daftpunk.com/swa/*','output':'json','from':'1997','to':'2010','filter':'statuscode:200','collapse':'urlkey','limit':'500'})),
+            ('ia-apex-disco','https://web.archive.org/cdx/search/cdx?'+urllib.parse.urlencode({'url':'daftpunk.com/disco/swa/*','output':'json','from':'1997','to':'2010','filter':'statuscode:200','collapse':'urlkey','limit':'500'})),
+            ('arquivo-www-main','https://arquivo.pt/wayback/cdx?'+urllib.parse.urlencode({'url':'www.daftpunk.com/swa/*','output':'json'})),
+            ('arquivo-www-disco','https://arquivo.pt/wayback/cdx?'+urllib.parse.urlencode({'url':'www.daftpunk.com/disco/swa/*','output':'json'})),
+            ('arquivo-apex-main','https://arquivo.pt/wayback/cdx?'+urllib.parse.urlencode({'url':'daftpunk.com/swa/*','output':'json'})),
+            ('arquivo-apex-disco','https://arquivo.pt/wayback/cdx?'+urllib.parse.urlencode({'url':'daftpunk.com/disco/swa/*','output':'json'})),
+          ]
+          jobs=prefix.copy()
+          for path in paths:
+            jobs.append(('ia-exact-www-'+path,'https://web.archive.org/cdx/search/cdx?'+urllib.parse.urlencode({'url':'www.daftpunk.com/'+path,'output':'json','from':'1997','to':'2010','limit':'50'})))
+            jobs.append(('ia-exact-apex-'+path,'https://web.archive.org/cdx/search/cdx?'+urllib.parse.urlencode({'url':'daftpunk.com/'+path,'output':'json','from':'1997','to':'2010','limit':'50'})))
+            jobs.append(('arquivo-exact-'+path,'https://arquivo.pt/wayback/cdx?'+urllib.parse.urlencode({'url':'www.daftpunk.com/'+path,'output':'json'})))
+          def job(item):
+            name,url=item
+            try:
+              req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 (compatible; HistoryResearch/1.0)'})
+              with urllib.request.urlopen(req,timeout=30) as response:
+                raw=response.read(250000)
+                return dict(name=name,code=response.status,data=raw.decode('utf-8','replace')[:15000],truncated=len(raw)>15000)
+            except Exception as e:return dict(name=name,error=type(e).__name__+': '+str(e)[:200])
+          out=[]
+          with concurrent.futures.ThreadPoolExecutor(max_workers=7) as executor:
+            for r in executor.map(job,jobs):
+              out.append(r)
+              print(r['name'],r.get('code',r.get('error')),repr(r.get('data','')[:140]),flush=True)
+          Path('audio_index_results.json').write_text(json.dumps({'checked':len(out),'queries':out},indent=2))
+          print('TOTAL',len(out),'NONEMPTY',sum(bool(x.get('data','').strip() not in ('[]','')) for x in out),flush=True)
+          PY
+          python3 /tmp/mine_audio.py
+      - name: Save index results
+        if: always()
+        run: |
+          if [ -s audio_index_results.json ]; then
+            git add audio_index_results.json
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Record extensive historical audio archive search [skip ci]'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

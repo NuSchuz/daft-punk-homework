@@ -50,11 +50,13 @@ with tempfile.TemporaryDirectory() as temp:
     run("unar","-quiet","-forks","visible","-output-directory",scratch,source)
     def app_files():
         return [p for p in scratch.rglob("*") if p.is_file() and p.name.lower()=="phoenixobot.dcr"]
+    print("After first extraction:",[(str(p.relative_to(scratch)),p.stat().st_size) for p in scratch.rglob("*") if p.is_file()][:30],flush=True)
     candidates=app_files()
     if not candidates:
         sit_files=[p for p in scratch.rglob("*") if p.is_file() and p.suffix.lower()==".sit"]
         for p in sit_files:
             run("unar","-quiet","-forks","visible","-output-directory",scratch/"expanded",p)
+        print("After StuffIt extraction:",[(str(p.relative_to(scratch)),p.stat().st_size) for p in scratch.rglob("*") if p.is_file()][:30],flush=True)
         candidates=app_files()
     if not candidates:raise SystemExit("Original phoenixobot.dcr not found after extraction")
     app=candidates[0]

@@ -6,6 +6,8 @@ on:
     paths:
       - 'DAFT_PUNK_SITE_UPLOAD.zip'
       - '.github/workflows/deploy.yml'
+      - 'overrides/**'
+      - 'tools/build_toy_disk.py'
   workflow_dispatch:
 
 permissions:
@@ -45,6 +47,17 @@ jobs:
           touch public/.nojekyll
           echo "Restoration files extracted:"
           find public -type f | wc -l
+
+      - name: Preserve and mount the original 1998 Macintosh toy
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq unar hfsutils
+          python3 tools/build_toy_disk.py public
+          cp overrides/toy.html public/toy.html
+          cp overrides/toy-mac.html public/toy-mac.html
+          test -s public/daft-punk-toy.img
+          echo "Embedded 1998 Macintosh toy disk: $(du -h public/daft-punk-toy.img)"
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5

@@ -1,0 +1,40 @@
+name: Investigate 1997 Daft Punk Internet Archive find
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/investigate-ia-find.yml']
+permissions:
+  contents: write
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download Internet Archive item metadata and file list
+        run: |
+          python3 - <<'PY'
+          import requests,json
+          from pathlib import Path
+          identifier='19971998-daftpunk.com-daft-questions'
+          urls=['https://archive.org/metadata/'+identifier,'https://archive.org/download/'+identifier+'/'+identifier+'_files.xml']
+          results=[]
+          for url in urls:
+            try:
+              r=requests.get(url,timeout=45)
+              print('URL',url,'status',r.status_code,'len',len(r.content),'type',r.headers.get('Content-Type'),flush=True)
+              if 'metadata/' in url:
+                data=r.json()
+                for f in data.get('files',[]):print('FILE',f.get('name'),f.get('size'),f.get('source'),flush=True)
+                results.append({'url':url,'status':r.status_code,'metadata':data})
+              else:
+                print('BODY',r.text[:4000])
+                results.append({'url':url,'status':r.status_code,'body':r.text[:20000]})
+            except Exception as e:print('ERROR',str(e));results.append({'url':url,'error':str(e)})
+          Path('internet_archive_daftpunk_find.json').write_text(json.dumps(results,indent=2))
+          PY
+      - name: Store metadata
+        run: |
+          git add internet_archive_daftpunk_find.json
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Inventory discovered 1997 Daft Punk archival item [skip ci]'
+          git pull --rebase origin main
+          git push origin HEAD:main

@@ -1,0 +1,79 @@
+name: Exhaust public archive metadata and mirrors
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/deep-mirror-hunt.yml']
+permissions:
+  contents: write
+jobs:
+  investigate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Query public archive catalogues and searchable code indexes
+        run: |
+          cat >/tmp/hunt.py <<'PY'
+          import requests,concurrent.futures,json,time,urllib.parse,sys
+          from pathlib import Path
+          terms=[
+            'title:("Daft Punk" AND website)',
+            'title:(daftpunk)',
+            'description:("daftpunk.com")',
+            'title:("Daft Punk" AND (archive OR site OR backup))',
+            'identifier:(daftpunk)',
+            'description:("world.swa")',
+            'description:("burnin.swa")',
+            'description:("revolution.swa")',
+            'description:("disco/swa")',
+            'title:("1990s" AND websites)',
+            'title:("Daft Punk" AND interactive)'
+          ]
+          search_terms=['"world.swa"','"burnin.swa"','"revolution.swa"','"dafunk.swa"','"musique.swa"','"disco/swa/"','"daftpunk.com" "menu.dcr"','"phoenixobot.dcr"','"daftpunk.com" "1998"','"www.daftpunk.com" "site" "zip"']
+          jobs=[]
+          for term in terms:
+            jobs.append(('IA SEARCH '+term,'https://archive.org/advancedsearch.php',{'q':term,'fl[]':['identifier','title','date','description','mediatype'],'rows':100,'page':1,'output':'json'}))
+          for term in search_terms:
+            jobs.append(('GREP '+term,'https://grep.app/api/search',{'q':term}))
+          jobs += [
+            ('IA FULLTEXT daftpunk website','https://archive.org/services/search/v1/scrape',{'q':'daftpunk.com','count':100}),
+            ('COMMONCRAWL indexes','https://index.commoncrawl.org/collinfo.json',None),
+            ('PROTOSEARCH','https://protoweb.org/',None),
+            ('FLASHPOINT search','https://flashpointarchive.org/api/search',{'query':'Daft Punk Website'}),
+          ]
+          def fetch(x):
+            label,url,params=x
+            try:
+              r=requests.get(url,params=params,timeout=28,headers={'User-Agent':'Mozilla/5.0 DigitalHeritageResearch/1.0'})
+              output={'label':label,'status':r.status_code,'url':r.url}
+              try: data=r.json()
+              except: data={'text':r.text[:1600]}
+              if 'IA SEARCH' in label and isinstance(data,dict):
+                docs=data.get('response',{}).get('docs',[])
+                output['count']=data.get('response',{}).get('numFound',0)
+                output['results']=docs[:100]
+              elif label.startswith('GREP'):
+                output['total']=data.get('hits',{}).get('total') if isinstance(data,dict) else None
+                output['hits']=[{'repo':i.get('repo'),'path':i.get('path')} for i in data.get('hits',{}).get('hits',[])[:35]] if isinstance(data,dict) else []
+              elif label=='COMMONCRAWL indexes':
+                output['index_count']=len(data) if isinstance(data,list) else None
+                output['oldest']=data[-10:] if isinstance(data,list) else None
+              else:output['response']=data if len(json.dumps(data))<50000 else str(data)[:50000]
+              print(label,'HTTP',r.status_code,'count',output.get('count',output.get('total',output.get('index_count',0))),flush=True)
+              return output
+            except Exception as e:
+              print(label,'ERROR',str(e)[:150],flush=True)
+              return {'label':label,'error':str(e)[:300]}
+          with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool: out=list(pool.map(fetch,jobs))
+          Path('deep_mirror_hunt.json').write_text(json.dumps(out,indent=2))
+          PY
+          python3 /tmp/hunt.py
+      - name: Save archival results
+        if: always()
+        run: |
+          if [ -s deep_mirror_hunt.json ]; then
+            git add deep_mirror_hunt.json
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Record deep public archive and filename index hunt [skip ci]'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

@@ -1,38 +1,134 @@
 <!doctype html>
-<html lang="en"><head>
+<html lang="en">
+<head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Daft Punk — 1998 Sequencer Toy (Original Macintosh)</title>
+<title>Daft Punk — Original 1998 Phoenix Sequencer</title>
 <style>
 :root{color-scheme:dark}*{box-sizing:border-box}
 body{background:#050605;color:#d8e5d0;font:13px/1.7 monospace;margin:0}
 header{padding:13px 17px;border-bottom:1px solid #263326;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-strong{color:#baff5b;letter-spacing:2px}a{color:#baff5b}nav{display:flex;gap:15px}
+strong{color:#baff5b;letter-spacing:2px}a{color:#baff5b}
+nav{display:flex;gap:15px}
 main{max-width:900px;margin:20px auto;padding:0 10px 35px;text-align:center}
 h1{font-size:19px;font-weight:normal}p{color:#b0b8a9}
-button{background:#baff5b;border:0;color:#111a06;font:bold 13px monospace;padding:13px 23px;margin:12px;cursor:pointer}
-#outer{width:100%;border:1px solid #3c5034;background:#000;overflow:hidden;margin:12px auto;display:none}
+button{background:#baff5b;border:0;color:#111a06;font:bold 13px monospace;padding:13px 18px;margin:7px;cursor:pointer}
+button.secondary{background:#263525;color:#caeca5;border:1px solid #42593a}
+#outer{width:100%;border:1px solid #3c5034;background:#000;position:relative;overflow:hidden;margin:12px auto;display:none}
 #mac{border:0;width:640px;height:480px;display:block;transform-origin:top left}
+#bootmask{position:absolute;inset:0;background:#000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:13px;z-index:2;pointer-events:none}
+#bootmask strong{color:#9e60ed;font-size:20px;letter-spacing:6px}
+#bootmask span{color:#aaa;font-size:12px}
 #status{min-height:24px}
-.details{text-align:left;margin:17px auto;max-width:640px;color:#c1c6b9}
-</style></head><body>
+.details{text-align:left;margin:16px auto;max-width:640px;color:#aeb5a8;font-size:12px}
+</style>
+</head>
+<body>
 <header><strong>DAFT PUNK / SEQUENCER TOY</strong><nav><a href="index.html">HOME</a><a href="daftpunk.sit.hqx" download>1998 ARCHIVE</a></nav></header>
-<main><h1>THE ORIGINAL MACINTOSH TOY</h1>
-<p>This is the preserved 1998 sequencer, inside an emulated Power Macintosh running Mac OS 8.1.</p>
-<button id="start">START THE MACINTOSH</button><button id="retry" style="display:none;background:#314325;color:#d4ff98">RESTART MACINTOSH</button>
-<p id="status">Click to start. The classic Mac will load from Infinite Mac.</p>
-<p id="hint" style="display:none;color:#c9cbb7">If the emulator reports a CD-ROM HEAD/Content-Length error, tap <b>TRY ALTERNATE DISK HOST</b>. This restarts the Mac with a different download server.</p><div id="outer"><iframe id="mac" allow="cross-origin-isolated; autoplay; fullscreen" title="Emulated Power Macintosh with the original Daft Punk Sequencer Toy"></iframe></div>
-<div class="details"><strong>HOW TO PLAY</strong><br>
-1. Once Mac OS 8.1 boots, open the desktop disk labelled <strong>DAFT PUNK TOY</strong>.<br>
-2. Double-click <strong>phoenix</strong> in that disk to start the original program.<br>
-3. Click or tap inside the emulator if sound is muted. This vintage program may still have compatibility limitations.<br>
-On a phone, landscape orientation is recommended.</div></main>
+<main>
+<h1>THE ORIGINAL MACINTOSH TOY</h1>
+<p>The authentic <strong>PHOENIX</strong> sequencer, running inside a vintage Macintosh.</p>
+<div id="controls"><button id="start">PLAY ORIGINAL SEQUENCER</button><button id="reopen" class="secondary" style="display:none">OPEN SEQUENCER AGAIN</button><button id="restart" class="secondary" style="display:none">RESTART MAC</button></div>
+<p id="status">The Macintosh will boot and open the sequencer automatically.</p>
+<div id="outer">
+<iframe id="mac" allow="cross-origin-isolated; autoplay; fullscreen" title="Original 1998 Daft Punk Phoenix sequencer running in Mac OS 8.1"></iframe>
+<div id="bootmask"><strong>PHOENIX</strong><span>BOOTING THE ORIGINAL 1998 SEQUENCER...</span></div>
+</div>
+<div class="details">Mac OS 8.1 and the original 1998 application are preserved without alterations. On phones, landscape orientation gives you a larger playing surface. If the automatic launch fails, use <b>OPEN SEQUENCER AGAIN</b>. The vintage program may have audio or compatibility limitations.</div>
+</main>
 <script>
-(()=>{const btn=document.getElementById('start'),retry=document.getElementById('retry'),frame=document.getElementById('mac'),outer=document.getElementById('outer'),status=document.getElementById('status'),hint=document.getElementById('hint');let started=false;
-function fit(){if(!started)return;const scale=Math.min(1,outer.clientWidth/640);frame.style.transform='scale('+scale+')';outer.style.height=(480*scale+2)+'px';}
-function launch(alternate){started=true;const disk='https://raw.githubusercontent.com/NuSchuz/daft-punk-homework/main/assets/daft-punk-toy.img';const params=new URLSearchParams({disk:'Mac OS 8.1',machine:'Power Macintosh 9500',infinite_hd:'false',saved_hd:'false',library:'false',disk_url:disk,screenSize:'640x480',auto_pause:'true'});frame.src='https://infinitemac.org/embed?'+params;outer.style.display='block';btn.textContent='MACINTOSH STARTED';btn.disabled=true;retry.style.display='inline-block';hint.style.display='block';status.textContent='Starting Mac OS 8.1 with the original preserved Daft Punk sequencer...';fit();}
-btn.onclick=()=>launch(false);
-retry.onclick=()=>{retry.textContent='RESTARTING MACINTOSH';frame.src='about:blank';setTimeout(()=>{launch(false);retry.textContent='RESTART MACINTOSH';},100);};
+(()=>{
+const frame=document.getElementById('mac'),outer=document.getElementById('outer'),mask=document.getElementById('bootmask'),status=document.getElementById('status');
+const start=document.getElementById('start'),reopen=document.getElementById('reopen'),restart=document.getElementById('restart');
+const ORIGIN='https://infinitemac.org';
+const DISK='https://raw.githubusercontent.com/NuSchuz/daft-punk-homework/main/assets/daft-punk-toy.img';
+let started=false,busy=false,loaded=false,timer=null,generation=0;
+const delay=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+function fit(){
+ if(!started)return;
+ const scale=Math.min(1,outer.clientWidth/640);
+ frame.style.transform='scale('+scale+')';
+ outer.style.height=(480*scale+2)+'px';
+}
+function send(data){if(started&&frame.contentWindow)frame.contentWindow.postMessage(data,ORIGIN);}
+async function key(code){
+ send({type:'emulator_key_down',code});
+ await delay(120);
+ send({type:'emulator_key_up',code});
+ await delay(450);
+}
+async function openSelected(){
+ send({type:'emulator_key_down',code:'MetaLeft'});
+ await delay(150);
+ await key('KeyO');
+ send({type:'emulator_key_up',code:'MetaLeft'});
+ await delay(700);
+}
+async function openPhoenix(){
+ if(!started||busy)return;
+ busy=true;
+ const current=generation;
+ clearTimeout(timer);
+ status.textContent='Opening the original PHOENIX sequencer...';
+ try {
+   // Finder's type-to-select avoids desktop icons and the bundled welcome notes.
+   // Tested against Mac OS 8.1: select DAFT PUNK TOY, open, select phoenix, open.
+   await key('KeyD');
+   if(current!==generation)return;
+   await openSelected();
+   await key('KeyP');
+   await openSelected();
+   await delay(3000);
+   if(current!==generation)return;
+   mask.style.display='none';
+   status.textContent='PHOENIX should now be open. Click the emulator to interact or enable sound.';
+ }finally{
+   if(current===generation){busy=false;reopen.style.display='inline-block';}
+ }
+}
+function schedule(ms){
+ clearTimeout(timer);
+ const current=generation;
+ timer=setTimeout(()=>{if(current===generation)openPhoenix()},ms);
+}
+function launch(){
+ generation++;
+ clearTimeout(timer);
+ busy=false;loaded=false;started=true;
+ mask.style.display='flex';
+ outer.style.display='block';
+ start.style.display='none';
+ reopen.style.display='none';
+ restart.style.display='inline-block';
+ const params=new URLSearchParams({disk:'Mac OS 8.1',machine:'Power Macintosh 9500',infinite_hd:'false',saved_hd:'false',library:'false',disk_url:DISK,screenSize:'640x480'});
+ frame.src='https://infinitemac.org/embed?'+params;
+ status.textContent='Booting Mac OS 8.1 and preparing the original sequencer...';
+ fit();
+ // Fallback for browsers which do not deliver the emulator_loaded message.
+ schedule(30000);
+}
+start.onclick=launch;
+restart.onclick=()=>{
+ generation++;clearTimeout(timer);
+ frame.src='about:blank';
+ setTimeout(launch,180);
+};
+reopen.onclick=()=>{if(!busy){mask.style.display='flex';openPhoenix()}};
 window.addEventListener('resize',fit);
-window.addEventListener('message',e=>{if(e.origin!=='https://infinitemac.org')return;if(e.data?.type==='emulator_loaded')status.textContent='Macintosh booting. Open DAFT PUNK TOY on the desktop.';if(e.data?.type==='emulator_error')status.textContent='Emulator error: '+String(e.data.error||'unknown error');});
+window.addEventListener('message',e=>{
+ if(e.origin!==ORIGIN||!started)return;
+ const data=e.data||{};
+ if(data.type==='emulator_loaded'&&!loaded){
+   loaded=true;
+   status.textContent='Mac OS 8.1 is starting. PHOENIX will open automatically.';
+   schedule(18000);
+ }
+ if(data.type==='emulator_error'){
+   clearTimeout(timer);
+   mask.style.display='none';
+   reopen.style.display='inline-block';
+   status.textContent='Macintosh emulator error: '+String(data.error||'unknown');
+ }
+});
 })();
-</script></body></html>
+</script>
+</body></html>
